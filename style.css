@@ -4,12 +4,104 @@
     padding: 0;
 }
 
-div {
+/*div {
     background-color: grey;
-}
+}*/
 
 /* Jakubs css */
 
 /* Hampus CSS */
+
+/* sortiment-selected-tems start*/
+.sortiment-selected-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sortiment-selection-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sortiment-selection-1,
+.sortiment-selection-2,
+.sortiment-selsction-3,
+.sortiment-selection-4 {
+    width: 362px;
+    height: 311px;
+    margin: 10px;  
+}
+
+.sortiment-selection-2 {
+    background-color: gray;
+}
+
+.sortiment-selection-1 {
+    background-color: grey;
+}
+
+.sortiment-selsction-3 {
+    background-color: grey;
+}
+
+.sortiment-selection-4 {
+    background-color: grey;
+}
+
+.sortiment-selection-wraper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.sortiment-selection-hidden{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px) {
+    .sortiment-selection-hidden{visibility: hidden;}  /* hidden on phone, shown on loptop */
+  }
+
+@media screen and (min-width: 651px) and (max-width: 3000px) {
+    .sortiment-selection-wraper{height: 259; width: 658;}  /* only shown on laptop */
+  }
+  /*sortiment-selected-items end*/
+
+  /*our story start*/
+  .our-story-centered {
+    display: flex;                
+    justify-content: center; 
+    height: 100vh;               
+}
+
+
+.our-story {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);  
+    grid-template-rows: repeat(3, 293px);  
+    padding-top: 10px;                      
+}
+
+
+.our-story-box-1 { background-color: grey; }
+.our-story-box-2 { background-color: lightgray; }
+.our-story-box-3 { background-color: lightgray; }
+.our-story-box-4 { background-color: gray; }
+.our-story-box-5 { background-color: grey; }
+.our-story-box-6 { background-color: lightgrey; }
+
+@media screen and (max-width: 800px) {    /*hidden on hone and shown on laptop*/
+    .our-story-centered{visibility: hidden;}  
+  }
+
+  /* our story-end*/
+  
 
 /* Andrea CSS */
