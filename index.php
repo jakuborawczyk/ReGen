@@ -16,14 +16,14 @@ require __DIR__.'/footer.php';?>
     <div class="hero-inspiration">
       <!-- Hampus bygger -->
     </div>
-    <div class="news-collaboration">
+    <div class="sortiment-selected-items"> <!--om oss och sustainablity är här i mobilt -->
       <!-- Hampus bygger -->
     </div>
-    <div class="our-story">
+    <div class="our-story"> <!--bara desktop-->
       <h1>hampus byggerh1</h1>
       <!-- Hampus bygger -->
     </div>
-    <div class="sustainability">
+    <div class="sustainability"> <!--bara desktop-->
       <!-- Andrea bygger -->
     </div>
     "
