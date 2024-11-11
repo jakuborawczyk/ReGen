@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require __DIR__.'/footer.php';?>
 
-    <div class="hero">
+    <div class="hero"> <!--utan grid på mobilt-->
       <!-- Jakub bygger -->
     </div>
     <div class="sortiment">
@@ -27,7 +27,7 @@ require __DIR__.'/footer.php';?>
       <!-- Andrea bygger -->
     </div>
     "
-    <div class="contact">
+    <div class="social-media">
       <!-- Andrea Bygger -->
 
 
