@@ -2,16 +2,69 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: 1px solid red;
+
 }
 
 body {
-    width:100vw;
+    width:100%;
+
 }
 /*div {
     background-color: grey;
 }*/
 
 /* Jakubs css */
+header{
+    width: 100%;
+    height: 60px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logoHeader{
+    background-color: darkgrey;
+    width: 160px;
+    height: 30px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 654px;
+    height: 24px;
+}
+.navContainer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.navText{
+font-family: "IBM Plex Sans", sans-serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 31.2px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+.fa-xl {
+    font-size: 26px;
+}
+/* Class that shows all the things that should be seen on desktop. If given, everything with this class will not be shown when width is less than 768px */
+.desktop-only {
+    display: inline; /* Show by default */
+  }
+
+
+@media (max-width: 768px) {
+    .desktop-only {
+      display: none; /* Hide on screens smaller than 768px */
+    }
+  }
 
 /* Hampus CSS */
 
@@ -112,7 +165,7 @@ footer {
     padding-top: 27px;
     padding-right: 10px;
     background-color: gray;
-    width: 100vw;
+    width: 100%;
     height: 401px;
     display: flex;
     padding: 27px 0px;
