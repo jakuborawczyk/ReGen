@@ -74,10 +74,23 @@ require __DIR__ . '/header.php'; ?>
   <div class="sustainability"> <!--bara desktop-->
     <!-- Andrea bygger -->
   </div>
-  <div class="social-media">
+  <div class="social-media-mobile">
     <!-- Andrea Bygger -->
-
-
+    <div class="social-media-text">Följ vår resa på Instagram</div>
+    <div class="social-media-mockup"></div>
+    <div class="social-media-text">@Regenjewelry</div>
   </div>
+
+  <div class="social-media-desktop">
+    <div class="social-media-mockup"></div>
+    <div class="social-media-cat-desktop">
+      <div class="social-media-text">Följ vår resa på Instagram</div>
+      <div class="social-media-links-desktop">
+        <div><img><a href=""></a></div>
+        <div><img><a href=""></a></div>
+      </div>
+    </div>
+  </div>
+
 
   <?php require __DIR__ . '/footer.php'; ?>
