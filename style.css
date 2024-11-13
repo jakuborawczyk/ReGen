@@ -135,6 +135,20 @@ text-decoration-skip-ink: none;
 
 /* Hampus CSS */
 
+/*hero-inspiration start*/
+.hero-inspiration{
+    display: flex;
+    justify-content: center;
+    width: 362px;
+    height: 270px;
+    margin: auto;
+    background-color: grey;
+}
+
+@media screen and (min-width: 652px) and (max-width: 3000px) {
+    .hero-inspiration{ height: 428px; width: 1416px;;}  
+  }
+
 /* sortiment-selected-tems start*/
 .sortiment-selected-items{
     display: flex;

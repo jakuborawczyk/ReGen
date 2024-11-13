@@ -25,13 +25,12 @@ require __DIR__ . '/header.php'; ?>
   <form>
     <!-- Jakub bygger -->
   </form>
+  <!--Hampus bygger-->
   <div class="hero-inspiration">
 
-    <!-- Hampus bygger -->
-    <!--om oss och sustainablity är här i mobilt -->
-
-    <!-- sortiment selection items-->
   </div>
+  <!--om oss och sustainablity är här i mobilt -->
+  <!-- sortiment selection items-->
   <div class="sortiment-selected-items">
     <div class="sortiment-selection-wrap">
 
