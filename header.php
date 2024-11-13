@@ -20,16 +20,19 @@ declare(strict_types=1); ?>
 <body>
   <header>
     <div class="logoHeader">
-      <a href="#">Sortiment</a>
-      <a class="desktop-only" href="#">Om oss</a>
-      <a class="desktop-only" href="#">Mer →</a>
+      <img class="logoIMG" src="/../assets/Smallregular.png" alt="">
+      <div>
+      <a class="headerText desktop-only" href="#">Om oss</a>
+      <a class="headerText" href="#">Sortiment</a>
+      <a class="desktop-only headerText" href="#">Mer→</a>
+    </div>
     </div>
     <nav>
-      <div class="navContainer"><i class="fa fa-shopping-bag fa-xl"></i> <span class="desktop-only navText">Shopping</span></div> 
-      <div class="navContainer"><i class="fa fa-heart fa-xl"></i> <span class="desktop-only navText">Favoriter</span></div> 
-      <div class="navContainer"><i class="fa fa-user fa-xl"></i> <span class="desktop-only navText">Konto</span></div> 
-      <div class="navContainer"><i class="fa fa-globe fa-xl"></i> <span class="desktop-only navText">Sv</span></div> 
-      <div class="navContainer"><i class="fa fa-search fa-xl"></i> <span class="desktop-only navText">Sök</span></div> 
+      <div class="navContainer"><i class="fa fa-shopping-bag fa-xl iconContainer"></i> <span class="desktop-only navText">Shopping</span></div> 
+      <div class="navContainer"><i class="fa fa-heart fa-xl iconContainer"></i> <span class="desktop-only navText">Favoriter</span></div> 
+      <div class="navContainer"><i class="fa fa-user fa-xl iconContainer"></i> <span class="desktop-only navText">Konto</span></div> 
+      <div class="navContainer"><i class="fa fa-globe fa-xl iconContainer"></i> <span class="desktop-only navText">Sv</span></div> 
+      <div class="navContainer"><i class="fa fa-search fa-xl iconContainer"></i> <span class="desktop-only navText">Sök</span></div> 
     </nav>
       <!-- Jakub bygger -->
 
