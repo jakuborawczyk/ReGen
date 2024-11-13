@@ -28,11 +28,11 @@ declare(strict_types=1); ?>
     </div>
     </div>
     <nav>
-      <div class="navContainer"><i class="fa fa-shopping-bag fa-xl iconContainer"></i> <span class="desktop-only navText">Shopping</span></div> 
-      <div class="navContainer"><i class="fa fa-heart fa-xl iconContainer"></i> <span class="desktop-only navText">Favoriter</span></div> 
-      <div class="navContainer"><i class="fa fa-user fa-xl iconContainer"></i> <span class="desktop-only navText">Konto</span></div> 
-      <div class="navContainer"><i class="fa fa-globe fa-xl iconContainer"></i> <span class="desktop-only navText">Sv</span></div> 
-      <div class="navContainer"><i class="fa fa-search fa-xl iconContainer"></i> <span class="desktop-only navText">Sök</span></div> 
+      <div class="navContainer"><i class="fa fa-shopping-bag iconResize iconContainer"></i> <span class="desktop-only navText">Shopping</span></div> 
+      <div class="navContainer"><i class="fa fa-heart iconResize   iconContainer"></i> <span class="desktop-only navText">Favoriter</span></div> 
+      <div class="navContainer"><i class="fa fa-user iconResize  iconContainer"></i> <span class="desktop-only navText">Konto</span></div> 
+      <div class="navContainer"><i class="fa fa-globe   iconResize   iconContainer"></i> <span class="desktop-only navText">Sv</span></div> 
+      <div class="navContainer"><i class="fa fa-search  iconResize   iconContainer"></i> <span class="desktop-only navText">Sök</span></div> 
     </nav>
       <!-- Jakub bygger -->
 

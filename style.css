@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 1px solid red;
 }
 
 body {
@@ -13,125 +12,108 @@ body {
 }*/
 
 /* Jakubs css */
-header{
+header {
+    padding: 0 2rem 0 2rem;
     width: 100%;
-    height: 100px; /* 100px desktop, 60px mobile, 224 fullopen */
+    height: 100px; /* 100px desktop, 60px mobile */
     background-color: lightgray;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.logoHeader{
-    width: 565.55px;
-    gap: 30px;
-    height: 60px;
+.logoHeader {
     display: flex;
     align-items: center;
+    gap: 30px;
 }
 
-.logoIMG{
-width: 120.55px;
-height: 60px;
-gap: 0px;
-opacity: 0px;
-
+.logoIMG {
+    width: 120.55px;
+    height: 60px;
 }
 
-.headerText{
-   font-family: "IBM Plex Sans";
+.headerText {
+    font-family: "IBM Plex Sans";
     font-size: 32px;
     font-weight: 700;
-    line-height: 41.6px;
     text-align: left;
-    text-decoration: none;
     color: black;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 654px;
-    height: 24px;
-}
-.navContainer{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.navText{
-font-family: "IBM Plex Sans";
-font-size: 24px;
-font-weight: 400;
-line-height: 31.2px;
-text-align: left;
-text-decoration-skip-ink: none;
-}
-.fa-xl {
-    font-size: 26px;
+    text-decoration: none;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
-/* Class that shows all the things that should be seen on desktop. If given, everything with this class will not be shown when width is less than 768px */
-@media (max-width: 768px) {
-    .desktop-only {
-      display: none; /* Hide on screens smaller than 768px */
-    }
-    header{
-        width: 100%;
-        height: 60px; /* 100px desktop, 60px mobile, 224 fullopen */
-        background-color: lightgray;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .logoHeader{
-        margin-left: 1rem;
-        width: 565.55px;
-        gap: 30px;
+.navContainer {
+    display: flex;
+    align-items: center;
+}
+
+.navText {
+    font-family: "IBM Plex Sans";
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.iconResize {
+    font-size: 40px; 
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 402px) {
+    header {
+        padding: 0 5px 0 0;
         height: 60px;
         display: flex;
         align-items: center;
-        justify-content: left;
+        justify-content: space-around;
+        gap: 10px;
+        top: 61px;
     }
-    nav{
-        display: flex;
-        align-items: center;
-        width: 160px;
-        height: 24px;
-        margin-right: 2rem;
-    }
-    .headerText{
-        font-family: "IBM Plex Sans";
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 20.8px;
-        text-align: left;
-        text-decoration-skip-ink: none;
 
-     }
-    .navContainer{
+    .logoIMG {
+        width: 60.28px;
+        height: 30px;
+        gap: 10px;
+    }
+    .navContainer {
         display: flex;
         align-items: center;
+        padding: 2px;
+    }
+
+    .headerText {
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+
+    nav {
         width: 160px;
-        height: 24px;
-        gap: 4rem;
-        opacity: 0px;
+        gap:10px;
+        justify-content: flex-end;
+    }
+    .iconResize {
+        font-size: 21px; 
     }
     .iconContainer{
         gap: 10px;
     }
-.logoIMG{
-    width: 60.28px;
-     height: 30px;
-     padding: 0px 0.61px 0px 1px;
-     opacity: 0px;
-}
-.fa-xl {
-    font-size: 1em;
-}
 
-  }
+    .desktop-only {
+        display: none;
+    }
+    .logoHeader {
+        width: 146.28px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
 
 /* Hampus CSS */
 
