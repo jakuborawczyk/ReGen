@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     outline: 1px solid red;
-
 }
 
 body {
@@ -131,14 +130,9 @@ text-decoration-skip-ink: none;
   /*sortiment-selected-items end*/
 
   /*our story start*/
-  .our-story-centered {
+.our-story {
     display: flex;                
     justify-content: center; 
-    height: 100vh;               
-}
-
-
-.our-story {
     display: grid;
     grid-template-columns: repeat(2, 500px);  
     grid-template-rows: repeat(3, 293px);  
@@ -154,7 +148,7 @@ text-decoration-skip-ink: none;
 .our-story-box-6 { background-color: lightgrey; }
 
 @media screen and (max-width: 800px) {    /*hidden on hone and shown on laptop*/
-    .our-story-centered{visibility: hidden;}  
+    .our-story{visibility: hidden;}  
   }
 
   /* our story-end*/

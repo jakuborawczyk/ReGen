@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require __DIR__ . '/header.php'; ?>
+require __DIR__ . '/footer.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -61,15 +61,13 @@ require __DIR__ . '/header.php'; ?>
   <!--sortiment selection items end-->
 
   <!--our story start-->
-  <div class="our-story-centered">
-    <div class="our-story">
-      <div class="our-story-box-1"></div>
-      <div class="our-story-box-2"></div>
-      <div class="our-story-box-3"></div>
-      <div class="our-story-box-4"></div>
-      <div class="our-story-box-5"></div>
-      <div class="our-story-box-6"></div>
-    </div>
+  <div class="our-story">
+    <div class="our-story-box-1"></div>
+    <div class="our-story-box-2"></div>
+    <div class="our-story-box-3"></div>
+    <div class="our-story-box-4"></div>
+    <div class="our-story-box-5"></div>
+    <div class="our-story-box-6"></div>
   </div>
   <!--our story end-->
 
