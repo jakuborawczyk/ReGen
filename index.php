@@ -29,30 +29,35 @@ require __DIR__ . '/header.php'; ?>
   <div class="hero-inspiration"></div>
   <!--om oss och sustainablity är här i mobilt -->
   <!-- sortiment selection items-->
-  <div class="sortiment-selected-items">
-    <div class="sortiment-selection-wrap">
+  <div class="sortiment-selection-item">
+    <div class="sortiment-selection-wraper">
+      <h3>News/seasonality</h3>
+      <div class="sortiment-selection-item-1"></div>
+    </div>
 
-      <div class="sortiment-selection-wraper">
-        <h3>News/seasonality</h3>
-        <div class="sortiment-selection-1"></div>
-      </div>
+    <div class="sortiment-selection-wraper">
+      <h3>Shop the look</h3>
+      <div class="sortiment-selection-item-2"></div>
+    </div>
 
-      <div class="sortiment-selection-wraper">
-        <h3>Our most beloved</h3>
-        <div class="sortiment-selection-2"></div>
-      </div>
+    <div class="sortiment-selection-wraper">
+      <h3>Our most beloved</h3>
+      <div class="sortiment-selection-item-3"></div>
+    </div>
 
-      <div class="sortiment-selection-hidden">
-        <div class="sortiment-selection-wraper">
-          <h3>Om oss</h3>
-          <div class="sortiment-selsction-3"></div>
-        </div>
+    <div class="sortiment-selection-wraper">
+      <h3>Collaboration/coming soon</h3>
+      <div class="sortiment-selection-item-4"></div>
+    </div>
 
-        <div class="sortiment-selection-wraper">
-          <h3>Hållbarhet</h3>
-          <div class="sortiment-selection-4"></div>
-        </div>
-      </div>
+    <div class="sortiment-selection-wraper-hidden">
+      <h3>Om oss</h3>
+      <div class="sortiment-selection-item-5"></div>
+    </div>
+
+    <div class="sortiment-selection-wraper-hidden">
+      <h3>Hållbarhet</h3>
+      <div class="sortiment-selection-item-6"></div>
     </div>
   </div>
   <!--sortiment selection items end-->
