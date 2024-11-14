@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: solid 1px red;
 }
 
 body {
@@ -121,13 +122,14 @@ nav {
 .hero-inspiration{
     display: flex;
     justify-content: center;
-    width: 362px;
+    width: 100%;
+    max-width: 100%;
     height: 270px;
     margin: auto;
     background-color: grey;
 }
 
-@media screen and (min-width: 652px) and (max-width: 3000px) {
+@media screen and (min-width: 403px){
     .hero-inspiration{ height: 428px; width: 1416px;;}  
   }
 
@@ -184,11 +186,11 @@ nav {
     
 }
 
-@media screen and (min-width: 0px) and (max-width: 800px) {
+@media screen and (min-width: 0px) and (max-width: 402px) {
     .sortiment-selection-hidden{display: none;}  /* hidden on phone, shown on loptop */
   }
 
-@media screen and (min-width: 651px) and (max-width: 3000px) {
+@media screen and (min-width: 402px) and (max-width: 3000px) {
     .sortiment-selection-wraper{height: 259; width: 658;}  /* only shown on laptop */
   }
   /*sortiment-selected-items end*/

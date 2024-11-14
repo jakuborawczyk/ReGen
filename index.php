@@ -26,9 +26,7 @@ require __DIR__ . '/header.php'; ?>
     <!-- Jakub bygger -->
   </form>
   <!--Hampus bygger-->
-  <div class="hero-inspiration">
-
-  </div>
+  <div class="hero-inspiration"></div>
   <!--om oss och sustainablity är här i mobilt -->
   <!-- sortiment selection items-->
   <div class="sortiment-selected-items">
