@@ -122,15 +122,15 @@ nav {
 .hero-inspiration{
     display: flex;
     justify-content: center;
-    width: 100%;
-    max-width: 100%;
+    max-width: 1400px;
+    width: 90%;
     height: 270px;
     margin: auto;
     background-color: grey;
 }
 
-@media screen and (min-width: 403px){
-    .hero-inspiration{ height: 428px; width: 1416px;;}  
+@media screen and (max-width: 402px){
+    .hero-inspiration{height: 385px; width: 362px;}  
   }
 
 /* sortiment-selected-tems start*/
@@ -200,7 +200,9 @@ nav {
     display: flex;                
     justify-content: center; 
     display: grid;
-    grid-template-columns: repeat(2, 500px);  
+    width: 65%;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);  
     grid-template-rows: repeat(3, 293px);  
     padding-top: 10px;                      
 }
