@@ -229,12 +229,6 @@ nav {
 /*INSTAGRAM*/
 
 /*SOCIAL MEDIA MOBILE & DESKTOP*/
-.social-media-mockup {
-    background-color: lightgray;
-    height: 362px;
-    width: 362px;
-}
-
 /* SOCIAL MEDIA MOBILE */
 
 
@@ -245,23 +239,33 @@ nav {
         }
 
         .social-media-text {
-            font-size:calc(1.5rem-2vw);
+            font-size: 1.5rem;
         }
         
     }
 
     .social-media-mobile {
         display: flex;
+        width:90vw;
         max-width: 362px;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
         gap: 10px;
         align-self: stretch;
-        margin: auto;
+        margin: 40px auto;
+    }
+
+    .follow-us {
+        background-color: lightgray;
+        height: 90vw;
+        max-height: 362px;
+        width: 90vw;
+        max-width: 362px;
     }
 
 /* SOCIAL MEDIA DESKTOP */
+
 /* As shown on desktop */
 @media (min-width: 768px) {
     .social-media-mobile {
@@ -270,26 +274,39 @@ nav {
 
     .social-media-desktop {
         display: flex;
-        max-width: 800px;
-        justify-content: space-between;
+        width:90w;
+        max-width: 1416px;
+        justify-content: center;
         align-items: center;
-        margin: auto;
+        margin: 120px auto;
+        height:45vw;
+        border-radius: 30px;
     }
 
     .social-media-text {
         font-size: 3rem;
     }
+
+    .follow-us {
+        background-color: lightgray;
+        height: 45vw;
+        max-height: 633px;
+        width: 45vw;
+        max-width: 633px;
+    }
 }
 
 
 
-.social-media-cta-desktop {
-    display: flex;
-width: 516px;
+.contact-desktop {
+display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
+width: 45vw;
+height: 45vw;
 gap: 40px;
+padding: 58px 50px;
 }
 
 
