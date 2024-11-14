@@ -8,6 +8,7 @@
 body {
     width:100%;
 }
+
 /*div {
     background-color: grey;
 }*/
@@ -238,13 +239,13 @@ nav {
 
 
 /* As shown on mobile */
-    @media (max-width: 402px) {
+    @media (max-width: 768px) {
         .social-media-desktop {
             display: none;
         }
 
         .social-media-text {
-            font-size:1.5rem;
+            font-size:calc(1.5rem-2vw);
         }
         
     }
@@ -262,7 +263,7 @@ nav {
 
 /* SOCIAL MEDIA DESKTOP */
 /* As shown on desktop */
-@media (min-width: 402px) {
+@media (min-width: 768px) {
     .social-media-mobile {
         display: none;
     }
