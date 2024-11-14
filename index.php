@@ -74,17 +74,17 @@ require __DIR__ . '/header.php'; ?>
   <div class="social-media-mobile">
     <!-- Andrea Bygger -->
     <div class="social-media-text">Följ vår resa på Instagram</div>
-    <div class="social-media-mockup"></div>
+    <div class="follow-us"></div>
     <div class="social-media-text">@Regenjewelry</div>
   </div>
 
   <div class="social-media-desktop">
-    <div class="social-media-mockup"></div>
-    <div class="social-media-cta-desktop">
+    <div class="follow-us"></div>
+    <div class="contact-desktop">
       <div class="social-media-text">Följ vår resa på Instagram</div>
       <div class="social-media-links-desktop">
-        <div><img><a href=""></a></div>
-        <div><img><a href=""></a></div>
+        <div class="social-media"><img class="icon" src="assets/Instagram.png" /><a href="https://www.instagram.com">@regenjewelry</div></a>
+        <div><img class="icon" src="assets/Facebook.png" /><a href="https://www.facebook.com">@regenjewelry</a></div>
       </div>
     </div>
   </div>
