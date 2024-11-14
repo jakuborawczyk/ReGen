@@ -223,17 +223,40 @@ nav {
 
 /*INSTAGRAM*/
 
-.social-media-mobile {
-    display: flex;
-    max-width: 362px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 10px;
-    align-self: stretch;
-    margin: auto;
+/*SOCIAL MEDIA MOBILE & DESKTOP*/
+.social-media-mockup {
+    background-color: lightgray;
+    height: 362px;
+    width: 362px;
 }
 
+/* SOCIAL MEDIA MOBILE */
+
+
+/* As shown on mobile */
+    @media (max-width: 768px) {
+        .social-media-desktop {
+            display: none;
+        }
+
+        .social-media-text {
+            font-size:24px;
+        }
+        
+    }
+
+    .social-media-mobile {
+        display: flex;
+        max-width: 362px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+        align-self: stretch;
+        margin: auto;
+    }
+
+/* SOCIAL MEDIA DESKTOP */
 /* As shown on desktop */
 @media (min-width: 768px) {
     .social-media-mobile {
@@ -252,24 +275,7 @@ nav {
         font-size: 48px;
     }
 }
-/* As shown on mobile */
-    @media (max-width: 768px) {
-        .social-media-desktop {
-            display: none;
-        }
 
-        .social-media-text {
-            font-size:24px;
-        }
-        
-
-    }
-
-.social-media-mockup {
-    background-color: lightgray;
-    height: 362px;
-    width: 362px;
-}
 
 
 .social-media-cta-desktop {
@@ -283,7 +289,12 @@ gap: 40px;
 
 
 /*FOOTER*/
+/*FOOTER ALL SCREEN SIZES*/
+
+/* FOOTER MOBILE*/
+
 footer {
+    /* Footer width in design: 402x*/
     margin-top: 40px;
     padding-top: 27px 10px;
     background-color: gray;
@@ -300,53 +311,48 @@ footer {
 }
 
 .footer-logo {
-    width: 90px;
+    min-width: 90px;
     height: 47px;
     background-color: lightgray;
 }
 
 .footer-follow-us {
+    /* Design change on desktop*/
         background-color: lightgray;
-        width: 227px;
+        min-width: 227px;
+        width: 60%;
         height:21px;
         display: flex;
         align-items: center;
-        gap: 31px;
+        justify-content: space-around;
 
 }
 .footer-general-information {
+    /* Same on desktop and mobile*/
     background-color: lightgray;
     height: auto;
-    width:350px;
+    min-width:350px;
+    max-width:929px;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    row-gap: 63px;
+    /* row-gap: 63px; */ 
     flex-wrap: wrap;
 }
 
 hr.footer {
-    width: 317px;
+    /* min-width: 317px; */
+    width: 80%;
+    max-width: 1282;
     height: 1px;
 }
-
-/* .footer-integrity-cookie {
-background-color: lightgray;
-height: 21px;
-width:350px;
-display: flex;
-justify-content: center;
-align-items: flex-start;
-gap: 32px;
-
-} */
 
 /* <!-- dubbelkolla varför den här diven skapar massa problem--> */
 .footer-payment-information {
     background-color: lightgray;
-    width:350px;
-    max-width: 350px;
+    min-width:350px;
     height: 32px;
     display: flex;
     justify-content: space-around;
@@ -377,3 +383,16 @@ gap: 32px;
     width:auto;
     height:auto;
 }
+
+/* .footer-integrity-cookie {
+background-color: lightgray;
+height: 21px;
+width:350px;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 32px;
+
+} */
+
+/*FOOTER DESKTOP*/
