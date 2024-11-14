@@ -236,13 +236,13 @@ nav {
 
 
 /* As shown on mobile */
-    @media (max-width: 768px) {
+    @media (max-width: 402px) {
         .social-media-desktop {
             display: none;
         }
 
         .social-media-text {
-            font-size:24px;
+            font-size:1.5rem;
         }
         
     }
@@ -260,7 +260,7 @@ nav {
 
 /* SOCIAL MEDIA DESKTOP */
 /* As shown on desktop */
-@media (min-width: 768px) {
+@media (min-width: 402px) {
     .social-media-mobile {
         display: none;
     }
@@ -274,7 +274,7 @@ nav {
     }
 
     .social-media-text {
-        font-size: 48px;
+        font-size: 3rem;
     }
 }
 
@@ -321,7 +321,7 @@ footer {
 .footer-follow-us {
     /* Design change on desktop*/
         background-color: lightgray;
-        min-width: 227px;
+        /* min-width: 227px; */
         width: 60%;
         height:21px;
         display: flex;
@@ -333,7 +333,7 @@ footer {
     /* Same on desktop and mobile*/
     background-color: lightgray;
     height: auto;
-    min-width:350px;
+    /* min-width:350px; */
     max-width:929px;
     width: 80%;
     display: flex;
@@ -354,7 +354,7 @@ hr.footer {
 /* <!-- dubbelkolla varför den här diven skapar massa problem--> */
 .footer-payment-information {
     background-color: lightgray;
-    min-width:350px;
+    /* min-width:350px; */
     height: 32px;
     display: flex;
     justify-content: space-around;
