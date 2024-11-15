@@ -135,65 +135,54 @@ nav {
   }
 
 /* sortiment-selected-tems start*/
-.sortiment-selected-items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sortiment-selection-item-1,
+.sortiment-selection-item-2,
+.sortiment-selection-item-3,
+.sortiment-selection-item-4,
+.sortiment-selection-item-5,
+.sortiment-selection-item-6
+{
+    width: 362px;
+    height: 311px;
+    margin: 10px;  
+    background-color: grey;
 }
 
-.sortiment-selection-wrap {
+.sortiment-selection-item{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-
-.sortiment-selection-1,
-.sortiment-selection-2,
-.sortiment-selsction-3,
-.sortiment-selection-4 {
-    width: 362px;
-    height: 311px;
-    margin: 10px;  
-}
-
-.sortiment-selection-2 {
-    background-color: gray;
-}
-
-.sortiment-selection-1 {
-    background-color: grey;
-}
-
-.sortiment-selsction-3 {
-    background-color: grey;
-}
-
-.sortiment-selection-4 {
-    background-color: grey;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
 }
 
 .sortiment-selection-wraper{
     display: flex;
+    text-align: center;
     flex-direction: column;
-    align-items: center;
-    padding: 1rem;
 }
 
-.sortiment-selection-hidden{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+@media screen and (min-width: 768px){
+  .sortiment-selection-item-1,
+  .sortiment-selection-item-2,
+  .sortiment-selection-item-3,
+  .sortiment-selection-item-4 {
+  width: 658px;
+  height: 259px;
+    }
 }
 
-@media screen and (min-width: 0px) and (max-width: 402px) {
-    .sortiment-selection-hidden{display: none;}  /* hidden on phone, shown on loptop */
-  }
+@media screen and (min-width: 768px) {
+.sortiment-selection-wraper-hidden,
+  .sortiment-selection-wraper-hidden{
+    display: none;
+  } 
+}
 
-@media screen and (min-width: 402px) and (max-width: 3000px) {
-    .sortiment-selection-wraper{height: 259; width: 658;}  /* only shown on laptop */
-  }
+
+
   /*sortiment-selected-items end*/
 
   /*our story start*/
