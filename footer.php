@@ -22,9 +22,9 @@ declare(strict_types=1);?>
  </div>
  <!-- <div class="footer-integrity-cookie"></div> -->
  <div class="footer-payment-information">
-    <div class="footer-ecommerce"></div>
-    <div class="footer-ecommerce"></div>
-    <div class="footer-ecommerce"></div>
+    <div class="footer-ecommerce-mobile"></div>
+    <div class="footer-ecommerce-mobild"></div>
+    <div class="footer-ecommerce-mobile"></div>
     <div class="footer-text">Integritetspolicy</div>
     <div class="footer-text">Cookie policy</div>
  </div>

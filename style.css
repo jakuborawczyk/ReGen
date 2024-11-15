@@ -294,6 +294,18 @@ nav {
         width: 45vw;
         max-width: 633px;
     }
+
+    /* När jag lägger in bilden: */
+    /* object-fit:cover;
+    aspect-ratio:1; */
+
+    .footer-ecommerce-mobile {
+        display:none;
+    }
+
+    .footer-follow-us {
+        order: -1;
+    }
 }
 
 
