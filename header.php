@@ -19,4 +19,4 @@ declare(strict_types=1); ?>
 
 <body>
     <!-- Jakub bygger -->
-    <header></header>
+    <header></header></>
