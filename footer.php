@@ -4,18 +4,18 @@ declare(strict_types=1);?>
 
 <footer>
 <!-- Andrea bygger -->
- <div class ="footer-logo">Logo</div>
+ <img class ="footer-logo" src="assets/Regen-logo/Logo small black text no background.svg" />
  <div class="footer-follow-us">
-    <div class="footer-some">x</div>
-    <div class="footer-some">x</div>
-    <div class="footer-some">x</div>
-    <div class="footer-some">x</div>
-    <div class="footer-some">x</div>
+    <img class="footer-some" src="assets/Logos SVG/icon instagram.svg">
+    <img class="footer-some" src="assets/Logos SVG/icon facebook.svg">
+    <img class="footer-some" src="assets/Logos SVG/icon tiktok.svg">
+    <img class="footer-some" src="assets/Logos SVG/icon x.svg">
+    <img class="footer-some" src="assets/Logos SVG/icon linkedin.svg">
  </div>
  <div class="footer-payment-information-desktop">
-   <img class="footer-payment-icon-desktop" src="assets/Trygg E-handel-desktop.png" />
-   <img class="footer-payment-icon-desktop" src="assets/Klarna-desktop.png" />
-   <img class="footer-payment-icon-desktop" src="assets/Swish-desktop.png"/>
+    <img class="footer-payment-icon-desktop klarna" src="assets/Logos SVG/klarna-seeklogo.svg" />
+    <img class="footer-payment-icon-desktop" src="assets/Logos SVG/Swish lodrät färg.svg"/>
+    <img class="footer-payment-icon-desktop" src="assets/Logos webp/Trygg E-handel färg.webp" />
  </div>
  <hr class ="footer">
  <div class ="footer-general-information">
@@ -28,9 +28,9 @@ declare(strict_types=1);?>
  <!-- <div class="footer-integrity-cookie"></div> -->
  <div class="flex-break"></div>
  <div class="footer-payment-information">
-    <div class="footer-ecommerce-mobile"></div>
-    <div class="footer-ecommerce-mobile"></div>
-    <div class="footer-ecommerce-mobile"></div>
+    <img class="footer-ecommerce-mobile" src="assets/Logos SVG/Klarna logga liten.svg" />
+    <img class="footer-ecommerce-mobile" src="assets/Logos SVG/Swish lodrät svartvit.svg" />
+    <img class="footer-ecommerce-mobile" src="assets/Logos webp/Trygg E-handel svart-vit.webp" />
     <div class="footer-text">Integritetspolicy</div>
     <div class="footer-text">Cookie policy</div>
  </div>
