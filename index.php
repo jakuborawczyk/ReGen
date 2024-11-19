@@ -88,8 +88,8 @@ require __DIR__ . '/header.php'; ?>
     <div class="contact-desktop">
       <div class="social-media-text"><h1>Följ vår resa på Instagram</h1></div>
       <div class="social-media-links-desktop">
-        <div class="social-media"><img class="icon" src="assets/Instagram.png" /><a href="https://www.instagram.com">@regenjewelry</div></a>
-        <div><img class="icon" src="assets/Facebook.png" /><a href="https://www.facebook.com">@regenjewelry</a></div>
+        <div class="social-media"><img class="icon" src="assets/Logos SVG/icon instagram.svg" /><a href="https://www.instagram.com">@regenjewelry</div></a>
+        <div><img class="icon" src="assets/Logos SVG/icon facebook.svg" /><a href="https://www.facebook.com">@regenjewelry</a></div>
       </div>
     </div>
   </div>
