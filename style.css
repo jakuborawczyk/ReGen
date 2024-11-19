@@ -118,12 +118,21 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 2.5rem;
-  @media screen {min-width: 768px; 
-    gap: 1.5rem;
+
   }
-  /* background-color: yellow; */
+
+  @media (max-width: 768px) { 
+    body {
+    gap: 1.5rem;
+  } 
 }
+
+  @media (min-width: 768px) { 
+    body {
+    gap: 2.5rem;
+  }
+}
+  /* background-color: yellow; */
 /* Container for the opeening image and 9 collage images */
 .openingsContainer {
   margin-top: 5rem;
