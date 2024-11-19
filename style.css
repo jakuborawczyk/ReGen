@@ -55,22 +55,27 @@
 @media (min-width: 768px) {
   h1 {
   font-size: var(--font-size-desktop-h1);
+  font-weight:var(--font-normal-weight);
   }
 
   h2 {
     font-size: var(--font-size-desktop-h2);
+    font-weight:var(--font-normal-weight);
   }
 
   h3 {
     font-size: var(--font-size-desktop-h3);
+    font-weight:var(--font-normal-weight);
   }
 
   p {
     font-size: var(--font-size-desktop-text);
+    font-weight:var(--font-normal-weight);
   }
 
   p.small {
     font-size: var(--font-size-desktop-text-small);
+    font-weight:var(--font-normal-weight);
   }
 }
 
@@ -78,18 +83,22 @@
 @media (max-width: 768px) {
   h1 {
     font-size: var(--font-size-mobile-h1);
+    font-weight:var(--font-normal-weight);
   }
   
   h2 {
     font-size: var(--font-size-mobile-h2);
+    font-weight:var(--font-normal-weight);
   }
   
   p {
     font-size: var(--font-size-mobile-text); 
+    font-weight:var(--font-normal-weight);
   }
   
   p.small {
-    font-size: var(--font-size-mobile-text-small);   
+    font-size: var(--font-size-mobile-text-small);
+    font-weight:var(--font-normal-weight);  
   }
   
   }
