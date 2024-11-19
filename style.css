@@ -266,6 +266,7 @@ body {
 /*sortiment-selected-items end*/
 
 /*our story start*/
+/*@TODO: Måste jobba med bilderna här*/
 .our-story {
   display: flex;
   justify-content: center;
@@ -278,22 +279,27 @@ body {
 }
 
 .our-story-box-1 {
-  background-color: grey;
+  background-color: var(--section-light-grey);
 }
 .our-story-box-2 {
   background-color: lightgray;
+  background: url('assets/Desktop - webp/Om-oss_ReGen_Desktop_500x293.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
+  object-fit: cover;
 }
 .our-story-box-3 {
   background-color: lightgray;
+  background: url('assets/Desktop - webp/Kretskort_ReGen_Desktop_500x293.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
+  object-fit: cover;
 }
 .our-story-box-4 {
-  background-color: gray;
+  background-color: var(--section-light-grey);
 }
 .our-story-box-5 {
-  background-color: grey;
+  background-color: var(--section-light-grey);
 }
 .our-story-box-6 {
-  background-color: lightgrey;
+  background: url('assets/Desktop - webp/Inte-som-andra_ReGen_Desktop_500x293.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 800px) {
@@ -306,6 +312,88 @@ body {
 /* our story-end*/
 
 /* Andrea CSS */
+
+/* SUSTAINABILITY */
+/* Not visible on mobile*/
+@media (max-width: 768px) {
+  .sustainability-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+.sustainability-desktop {
+  display: flex;
+  width: 93%;
+  max-width: 1412px;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: var(--section-light-grey);
+}
+
+.sustainability-image {
+  /* @TODO: Figure out how to scale this image properly */
+  width: 50%;
+  height: 100%;
+}
+
+.sustainability-text {
+  display: flex;
+  padding-left: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height:100%;
+  gap: 36px;
+  padding: 50px 0px 0px 50px;
+}
+
+.sustainability-text p {
+width: 85%;
+
+}
+
+.sustainability-text h2 {
+  width: 85%;
+}
+
+.sustainability-awards {
+  max-width:284px;
+  height: 18%;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+img.sustainability-icon {
+  /*@TODO: Figure out how to make she images shrink properly*/
+  object-fit:cover;
+  max-height: 120px;
+  height:18%;
+
+}
+
+button.sustainability-button {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+color: var(--text-white, #FFF);
+text-align: center;
+font-size: var(--font-size-desktop-text);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border-radius: 6px;
+background: var(--button-primary-green);
+border: 0;
+}
+}
+
 
 /*INSTAGRAM*/
 
@@ -379,6 +467,7 @@ body {
     margin: 120px auto;
     height: 45vw;
     border-radius: 30px;
+    background-color: var(--section-light-grey);
   }
 
   .social-media-text {
@@ -390,6 +479,9 @@ body {
     max-height: 633px;
     width: 45vw;
     max-width: 633px;
+    margin-left:auto;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
         /* När jag lägger in bilden: */
     /* object-fit:cover;
       aspect-ratio:1; */
