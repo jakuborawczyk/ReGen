@@ -116,8 +116,12 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 7.5rem;
+  gap: 2.5rem;
+  @media screen {min-width: 768px; 
+    gap: 1.5rem;
+  }
   /* background-color: yellow; */
 }
 /* Container for the opeening image and 9 collage images */
@@ -297,6 +301,15 @@ body {
 /*INSTAGRAM*/
 
 /*SOCIAL MEDIA MOBILE & DESKTOP*/
+.social-media p {
+  text-decoration: underline;
+}
+
+.icon {
+  width: 31px;
+  height: 31px;
+}
+
 /* SOCIAL MEDIA MOBILE */
 
 /* As shown on mobile */
@@ -305,15 +318,25 @@ body {
     display: none;
   }
 
+  .social-media {
+    width:100%;
+    display: flex;
+    gap: 11px;
+  }
   .social-media-text {
     font-size: 1.5rem;
+  }
+
+  img.follow-us {
+    width: 90%;
+    object-fit: cover;
+    aspect-ratio: 1;
   }
 }
 
 .social-media-mobile {
   display: flex;
-  width: 90vw;
-  max-width: 362px;
+  width: 90%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -322,13 +345,7 @@ body {
   margin: 40px auto;
 }
 
-.follow-us {
-  background-color: lightgray;
-  height: 90vw;
-  max-height: 362px;
-  width: 90vw;
-  max-width: 362px;
-}
+
 
 /* SOCIAL MEDIA DESKTOP */
 
@@ -338,6 +355,12 @@ body {
     display: none;
   }
 
+  .social-media {
+    width:85%;
+    display: flex;
+    gap: 24px;
+
+  }
   .social-media-desktop {
     display: flex;
     width: 90w;
@@ -354,7 +377,6 @@ body {
   }
 
   .follow-us {
-    background-color: lightgray;
     height: 45vw;
     max-height: 633px;
     width: 45vw;
@@ -363,18 +385,21 @@ body {
     /* object-fit:cover;
       aspect-ratio:1; */
   }
+
+  .contact-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 45%;
+    height: 45%;
+    max-width:708px;
+    gap: 40px;
+    padding: 58px 50px;
+  }
 }
 
-.contact-desktop {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 45vw;
-  height: 45vw;
-  gap: 40px;
-  padding: 58px 50px;
-}
+
 
 /*FOOTER*/
 /*FOOTER ALL SCREEN SIZES*/
@@ -391,14 +416,18 @@ body {
   .footer-payment-information-desktop {
       display: none;
   }
+
+  .footer-payment-information {
+    width: 84%;
+    max-width: 340px;
+  }
 }
 
 
 footer {
   /* Footer width in design: 402x*/
-  margin-top: 40px;
   padding-top: 27px 10px;
-  background-color: gray;
+  background-color: var(--background-footer);
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -408,17 +437,17 @@ footer {
   align-items: center;
   gap: 31px;
   align-self: stretch;
+  margin-top: auto;
+
 }
 
 .footer-logo {
   min-width: 90px;
   height: 47px;
-  background-color: lightgray;
 }
 
 .footer-follow-us {
   /* Design change on desktop*/
-  background-color: lightgray;
   /* min-width: 227px; */
   width: 60%;
   height: 21px;
@@ -428,7 +457,6 @@ footer {
 }
 .footer-general-information {
   /* Same on desktop and mobile*/
-  background-color: lightgray;
   height: auto;
   /* min-width:350px; */
   max-width: 929px;
@@ -450,29 +478,25 @@ hr.footer {
 
 /* <!-- dubbelkolla varför den här diven skapar massa problem--> */
 .footer-payment-information {
-  background-color: lightgray;
   /* min-width:350px; */
   height: 32px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
 }
 
 .footer-ecommerce-mobile {
-  background-color: gray;
-  width: 32px;
   height: 32px;
 }
 
 .footer-text {
-  background-color: gray;
   font-size: 14px;
   height: 18px;
   width: auto;
 }
 
 .footer-some {
-  background-color: gray;
   width: 21px;
   height: 21px;
 }
@@ -483,17 +507,6 @@ hr.footer {
   height: auto;
 }
 
-
-/* .footer-integrity-cookie {
-background-color: lightgray;
-height: 21px;
-width:350px;
-display: flex;
-justify-content: center;
-align-items: flex-start;
-gap: 32px;
-
-} */
 
 /*FOOTER DESKTOP*/
 @media (min-width: 768px) {
@@ -523,14 +536,23 @@ gap: 32px;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      max-width:294px;
+      max-width: 350px;
       width: 60%;
-      height: auto;
+      height: 80px;
       width: 60%;
     }
 
     .footer-payment-information {
-       width: 17%;
-       max-width: 264px;
+       width: 30%;
+       max-width: 300px;
     }
+
+    .footer-payment-icon-desktop {
+      height:80px;
+    }
+
+    .klarna {
+      border-radius:10px;
+    }
+
   }
