@@ -1,8 +1,105 @@
+:root {
+  /* Background colors */
+  --background-page: #FFFFFF;
+  --background-menu: #F5F5F5;
+  --background-footer: #F5F5F5;
+
+  /*Section colors*/
+  --section-white:#FFFFFF;
+  --section-light-grey: #F5F5F5;
+
+  /*Community */
+  --community-check-box: #D4C9C7;
+  --community-email: #E9DAD6;
+
+  /*Logo*/
+  --logo-black: #0000;
+
+  /*Button*/
+  --button-brick: #C36443;
+  --button-black: #373737;
+  --button-error: #A94438;
+  --button-success: #50B668;
+  --button-white: #FFFFFF;
+  --button-light-grey: #F5F5F5;
+  --button-primary-green: #63695B;
+
+  /* Text */
+  --text-black: #373737;
+  --text-link: #C36443;
+  --text-brick: #C36443;
+  --text-white: #FFFFFF;
+
+/*Fonts*/
+  --font: "Ibm Plex Sans";
+/*Font faces*/
+  --font-normal-weight: 400;
+  --font-bold-weight: 800;
+/*Desktop sizes*/
+  --font-size-desktop-h1: 2.5rem ;
+  --font-size-desktop-h2: 2.25rem;
+  --font-size-desktop-h3: 2rem;
+  --font-size-desktop-text: 1.5rem ;
+  --font-size-desktop-text-small: ;
+
+/* Mobile sizes */
+  --font-size-mobile-h1: 1.5rem;
+  --font-size-mobile-h2: 1.125rem;
+  --font-size-mobile-text: 1rem;
+  --font-size-mobile-text-small: 0.875rem;
+
+
+}
+
+/* Font sizes on desktop */
+@media (min-width: 768px) {
+  h1 {
+  font-size: var(--font-size-desktop-h1);
+  }
+
+  h2 {
+    font-size: var(--font-size-desktop-h2);
+  }
+
+  h3 {
+    font-size: var(--font-size-desktop-h3);
+  }
+
+  p {
+    font-size: var(--font-size-desktop-text);
+  }
+
+  p.small {
+    font-size: var(--font-size-desktop-text-small);
+  }
+}
+
+/*Font sizes on mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: var(--font-size-mobile-h1);
+  }
+  
+  h2 {
+    font-size: var(--font-size-mobile-h2);
+  }
+  
+  p {
+    font-size: var(--font-size-mobile-text); 
+  }
+  
+  p.small {
+    font-size: var(--font-size-mobile-text-small);   
+  }
+  
+  }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: solid 1px red;
+  /* outline: solid 1px red; */
+  font-family: "Ibm Plex Sans"
 }
 
 body {
@@ -12,7 +109,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 7.5rem;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 /* Container for the opeening image and 9 collage images */
 .openingsContainer {
@@ -253,18 +350,9 @@ body {
     max-height: 633px;
     width: 45vw;
     max-width: 633px;
-  }
-
-  /* När jag lägger in bilden: */
-  /* object-fit:cover;
-    aspect-ratio:1; */
-
-  .footer-ecommerce-mobile {
-    display: none;
-  }
-
-  .footer-follow-us {
-    order: -1;
+        /* När jag lägger in bilden: */
+    /* object-fit:cover;
+      aspect-ratio:1; */
   }
 }
 
@@ -283,6 +371,19 @@ body {
 /*FOOTER ALL SCREEN SIZES*/
 
 /* FOOTER MOBILE*/
+
+/* As shown on mobile */
+@media (max-width: 768px) {
+  .flex-break {
+    display: none;
+  
+  }
+
+  .footer-payment-information-desktop {
+      display: none;
+  }
+}
+
 
 footer {
   /* Footer width in design: 402x*/
@@ -348,7 +449,7 @@ hr.footer {
   align-items: center;
 }
 
-.footer-ecommerce {
+.footer-ecommerce-mobile {
   background-color: gray;
   width: 32px;
   height: 32px;
@@ -373,6 +474,7 @@ hr.footer {
   height: auto;
 }
 
+
 /* .footer-integrity-cookie {
 background-color: lightgray;
 height: 21px;
@@ -385,3 +487,41 @@ gap: 32px;
 } */
 
 /*FOOTER DESKTOP*/
+@media (min-width: 768px) {
+  footer {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+    .footer-ecommerce-mobile {
+      display: none;
+    }
+  
+    .footer-follow-us {
+      order: -1;
+      max-width: 298px;
+    }
+
+    .flex-break {
+      display:block;
+      flex-basis: 100%;
+      height: 0;
+      margin: 0;
+    }
+
+    .footer-payment-information-desktop {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      max-width:294px;
+      width: 60%;
+      height: auto;
+      width: 60%;
+    }
+
+    .footer-payment-information {
+       width: 17%;
+       max-width: 264px;
+    }
+  }
