@@ -13,7 +13,7 @@
         <div class="openingsImageContainer">
 
         </div>
-        <aside class="collageContainer desktopOnly">
+        <aside class="collageContainer desktopOnlySmaller">
             <div class="topCollage">
                 <?php for ($i = 0; $i < 3; $i++): ?>
                     <div class="collageIMG" style="background: url('<?php echo $imagePaths[$i]; ?>') lightgray 0px -146.186px / 100% 235.971% no-repeat;"></div>
@@ -32,10 +32,11 @@
         </aside>
     </section>
 
-    <section class="categoryContainer">
-        <?php for ($i = 9; $i < 14; $i++): ?>
+    <section class="desktopOnlySmaller categoryContainer">
+        <?php for ($i = 9; $i < 13; $i++): ?>
             <div class="categoryIMG" style="background: url('<?php echo $imagePaths[$i]; ?>')"></div>
         <?php endfor; ?>
+        <div class="categoryIMG desktopOnlySmaller" style="background-image: url('assets/category5.jpg"></div>
         </div>
     </section>
 </body>

@@ -51,6 +51,7 @@
 
 }
 
+
 /* Font sizes on desktop */
 @media (min-width: 768px) {
   h1 {
@@ -107,7 +108,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* outline: solid 1px red; */
+   outline: solid 1px red; 
   font-family: "Ibm Plex Sans"
 }
 
@@ -133,6 +134,17 @@ body {
   }
 }
   /* background-color: yellow; */
+
+/* class that makes sure something is visible on desktop only */
+.desktopOnly {
+    display: block; /* Ensure it is visible on larger screens */
+}
+
+.desktopOnlySmaller {
+    display: block;  /* Ensure it is visible on larger screens */
+}
+
+
 /* Container for the opeening image and 9 collage images */
 .openingsContainer {
   margin-top: 5rem;
@@ -180,7 +192,7 @@ body {
 .categoryContainer {
   display: flex;
   width: 95vw;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -194,6 +206,7 @@ body {
     align-items: flex-end;
     gap: 0.625rem;
     flex-shrink: 0;
+    margin-bottom: 3rem;
 }
 /* Jakubs css */
 
@@ -215,6 +228,21 @@ body {
     height: 385px;
     width: 362px;
   }
+  .desktop-only {
+    display: none; /* Hide on screens smaller than 768px */
+}
+}
+@media screen and (max-width: 940px) {
+.desktopOnlySmaller {
+  display: none;
+}
+.categoryContainer{
+    display: flex;
+width: 80vw;
+align-items: flex-start;
+align-content: flex-start;
+flex-wrap: wrap;
+}
 }
 
 /* sortiment-selected-tems start*/
