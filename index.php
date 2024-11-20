@@ -62,8 +62,9 @@ require __DIR__ . '/header.php'; ?>
   </div>
   <!--sortiment selection items end-->
 
+  <!-- ANDREA KODAR -->
   <!--our story start-->
-  <div class="our-story">
+  <div class="about-us">
     <div class="our-story-box-1"></div>
     <div class="our-story-box-2"></div>
     <div class="our-story-box-3"></div>

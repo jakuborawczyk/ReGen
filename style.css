@@ -293,9 +293,12 @@ flex-wrap: wrap;
 
 /*sortiment-selected-items end*/
 
+
+/* Andrea kodar */
+/* ABOUT US */
 /*our story start*/
 /*@TODO: Måste jobba med bilderna här*/
-.our-story {
+.about-us {
   display: flex;
   justify-content: center;
   display: grid;
