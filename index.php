@@ -61,7 +61,7 @@ require __DIR__ . '/header.php'; ?>
               assets/Design/PLACEHOLDER Inspiration1416x428.png 1416w"
       sizes="(max-width: 768px) 100vw,
              (min-width: 769px) 100vw" />
-    <h2 class="hero-inspiration-header">INSPIRATION</h2>
+    <h1 class="hero-inspiration-header">INSPIRATION</h1>
   </section>
   <!--om oss och sustainablity är här i mobilt -->
   <!-- sortiment selection items-->
