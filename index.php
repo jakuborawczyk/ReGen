@@ -78,7 +78,7 @@ require __DIR__ . '/header.php'; ?>
   <!-- Andrea bygger -->
   <!-- SUSTAINABILITY -->
   <section class="sustainability-desktop">
-    <img class="sustainability-image" src="assets/Desktop - webp/Hållbarhet_ReGen_Desktop_718x708.webp" />
+    <img class="sustainability-image" src="assets/Desktop - webp/Hallbarhet_ReGen_Desktop_718x708.webp" />
     <div class="sustainability-text">
       <h2>Hållbarhet på riktigt</h2>
       <p>Genom att använda återvunna metaller från gamla smycken och elektronikskrot samt laboratorie-framställda ädelstenar, minimerar vi avfall och kan säkerställa en etisk produktion. Vårt sortiment inkluderar även etiskt odlade pärlor och accessoarer med porslin och glas. Självklart är vi certifierade:</p>

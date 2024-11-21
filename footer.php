@@ -14,8 +14,8 @@ declare(strict_types=1);?>
  </div>
  <div class="footer-payment-information-desktop">
     <img class="footer-payment-icon-desktop klarna" src="assets/Logos SVG/klarna-seeklogo.svg" />
-    <img class="footer-payment-icon-desktop" src="assets/Logos SVG/Swish lodrät färg.svg"/>
-    <img class="footer-payment-icon-desktop" src="assets/Logos webp/Trygg E-handel färg.webp" />
+    <img class="footer-payment-icon-desktop" src="assets/Logos SVG/Swish lodrat farg.svg"/>
+    <img class="footer-payment-icon-desktop" src="assets/Logos webp/Trygg E-handel farg.webp" />
  </div>
  <hr class ="footer">
  <div class ="footer-general-information">
@@ -28,8 +28,8 @@ declare(strict_types=1);?>
  <!-- <div class="footer-integrity-cookie"></div> -->
  <div class="flex-break"></div>
  <div class="footer-payment-information">
-    <img class="footer-ecommerce-mobile" src="assets/Logos SVG/Klarna logga liten.svg" />
-    <img class="footer-ecommerce-mobile" src="assets/Logos SVG/Swish lodrät svartvit.svg" />
+    <img class="footer-ecommerce-mobile-klarna" src="assets/Logos SVG/Klarna logga liten.svg" />
+    <img class="footer-ecommerce-mobile" src="assets/Logos SVG/Swish lodrat svartvit.svg" />
     <img class="footer-ecommerce-mobile" src="assets/Logos webp/Trygg E-handel svart-vit.webp" />
     <div class="footer-text">Integritetspolicy</div>
     <div class="footer-text">Cookie policy</div>

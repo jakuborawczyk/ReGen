@@ -108,7 +108,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-   outline: solid 1px red; 
+   /* outline: solid 1px red;  */
   font-family: "Ibm Plex Sans"
 }
 
@@ -335,7 +335,8 @@ flex-wrap: wrap;
   display: flex;
   padding: 10px;
   max-width:100%;
-  max-height: 100%;
+  height:100%;
+  max-height:100%;
   justify-content: center;
   align-items: center;
   box-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.20) inset;
@@ -420,32 +421,46 @@ flex-wrap: wrap;
   height:100%;
   gap: 36px;
   padding: 50px 0px 0px 50px;
+  /*From Claude AI*/
+  max-height: 647px; /* Set a maximum height */
+  overflow: hidden; /* Prevent unexpected growth */
 }
 
 .sustainability-text p {
 width: 85%;
+margin: 0; /* Remove default margins */
+
+/*From Claude AI*/
+overflow: hidden; /* Hide overflowing text */
+text-overflow: ellipsis; /* Add ellipsis (...) for long text */
 
 }
 
 .sustainability-text h2 {
   width: 85%;
+  /*From Claude AI*/
+  margin: 0; /* Remove default margins */
+  line-height: 1.2; /* Control line spacing */
 }
 
 .sustainability-awards {
-  max-width:284px;
-  height: 18%;
-  width:100%;
+  max-width: 576px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
 }
 
 img.sustainability-icon {
   /*@TODO: Figure out how to make she images shrink properly*/
-  background-size:cover;
-  max-height: 120px;
-  max-width: 100%;
-  height:18%;
+    /*@TODO: Figure out how to make she images shrink properly*/
+    width: 100%;
+    max-height: 50px; /* Limits individual icon size */
+    height: auto;
+    object-fit: contain;
+    /* Add these for debugging */
+    min-width: 50px; /* Ensure minimum size */
+  
 
 }
 
@@ -660,9 +675,13 @@ hr.footer {
   align-items: center;
 
 }
-
+/* @TODO: Kolla om det går att göra Klarna-loggan lite mindre i relation till de andra loggorna. Den ska vara 24 px och de andra 29px.*/
 .footer-ecommerce-mobile {
-  height: 32px;
+  height: 29px;
+}
+
+.footer-ecommerce-mobile-klarna
+{ height: 24px;
 }
 
 .footer-text {
@@ -694,6 +713,10 @@ hr.footer {
     .footer-ecommerce-mobile {
       display: none;
     }
+
+    .footer-ecommerce-mobile-klarna {
+      display: none;
+    }
   
     .footer-follow-us {
       order: -1;
@@ -720,6 +743,8 @@ hr.footer {
     .footer-payment-information {
        width: 30%;
        max-width: 300px;
+       display: flex;
+       align-items: center;
     }
 
     .footer-payment-icon-desktop {
