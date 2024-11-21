@@ -22,9 +22,34 @@ require __DIR__ . '/header.php'; ?>
   <div class="sortiment">
     <!-- Jakub bygger -->
   </div>
-  <form>
-    <!-- Jakub bygger -->
+  <!--form start-->
+  <div class="form-text">
+    <p>BLI MEDLEM OCH FÅ</p>
+    <h2>15% rabbat på ditt första köp</h2>
+  </div>
+
+  <form action="process_email.php" method="POST">
+    <label for="email">E-postadress*</label>
+    <br>
+    <input type="email" id="email" name="email" required>
+
+    <div class="checkboxes">
+      <label class="checkbox-container">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+        Jag har läst och godkänner <a href="01.php"> ReGens sekrestespolicy</a>*
+      </label>
+
+      <label class="checkbox-container">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+        Jag anmäler mig till nyhetsbrevet*
+      </label>
+    </div>
+    </div>
+    <button type="submit">SKICKA</button>
   </form>
+  <!--form end-->
   <!--Hampus bygger-->
   <div class="hero-inspiration"></div>
   <!--om oss och sustainablity är här i mobilt -->
@@ -65,11 +90,20 @@ require __DIR__ . '/header.php'; ?>
   <!-- ANDREA KODAR -->
   <!--ABOUT US SECTION-->
   <section class="about-us-section">
-    <div class="about-us-text"><h1>Om oss</h1><p>ReGen är ett skandinaviskt modeföretag som säljer hållbara smycken av återvunnet material i hög kvalitét.</p></div>
+    <div class="about-us-text">
+      <h1>Om oss</h1>
+      <p>ReGen är ett skandinaviskt modeföretag som säljer hållbara smycken av återvunnet material i hög kvalitét.</p>
+    </div>
     <div class="about-us-image"></div>
     <div class="our-production-image"></div>
-    <div class="about-us-text"><h1>Vår produktion</h1><p>Metallerna är återvunna från både gamla smycken som företaget köper in, men också från elektronikskrot, som till exempel kretskort.</p></div>
-    <div class="about-us-text"><h1>Inte som andra</h1><p>Vi erbjuder tidlösa, skandinaviska smycken med en etisk profil där alla smycken är tillverkade av återvunnet material och odlade ädelstenar.</p></div>
+    <div class="about-us-text">
+      <h1>Vår produktion</h1>
+      <p>Metallerna är återvunna från både gamla smycken som företaget köper in, men också från elektronikskrot, som till exempel kretskort.</p>
+    </div>
+    <div class="about-us-text">
+      <h1>Inte som andra</h1>
+      <p>Vi erbjuder tidlösa, skandinaviska smycken med en etisk profil där alla smycken är tillverkade av återvunnet material och odlade ädelstenar.</p>
+    </div>
     <div class="what-sets-us-apart-image"></div>
   </section>
   <!--About us ends-->
@@ -126,7 +160,7 @@ require __DIR__ . '/header.php'; ?>
       </div>
     </div>
     <!-- @TODO: PLACEHOLDER --> <img class="follow-us" src="assets/Mobil - webp/Instagram – mobil 362x362.webp">
-</section>
+  </section>
 
 
   <?php require __DIR__ . '/footer.php'; ?>
