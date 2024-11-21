@@ -50,41 +50,76 @@ require __DIR__ . '/header.php'; ?>
     <button type="submit">SKICKA</button>
   </form>
   <!--form end-->
+
+  <!-- ANDREA KODAR -->
   <!--Hampus bygger-->
   <div class="hero-inspiration"></div>
   <!--om oss och sustainablity är här i mobilt -->
   <!-- sortiment selection items-->
-  <div class="sortiment-selection-item">
-    <div class="sortiment-selection-wraper">
+
+
+  <!-- ANDREA KODAR -->
+  <section class="selected-sortiment-section">
+    <div class="selected-sortiment">
       <h3>News/seasonality</h3>
-      <div class="sortiment-selection-item-1"></div>
+      <image class="selected-sortiment-image"
+      src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
+      srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
+              assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
+      sizes="(max-width: 768px) 100vw,
+             (min-width: 769px) 50vw" />
     </div>
 
-    <div class="sortiment-selection-wraper">
+    <div class="selected-sortiment">
       <h3>Shop the look</h3>
-      <div class="sortiment-selection-item-2"></div>
+      <img class="selected-sortiment-image"          
+      src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
+      srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
+              assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
+      sizes="(max-width: 768px) 100vw,
+             (min-width: 769px) 50vw" />
     </div>
 
-    <div class="sortiment-selection-wraper">
+    <div class=" selected-sortiment desktopOnly">
       <h3>Our most beloved</h3>
-      <div class="sortiment-selection-item-3"></div>
+      <img class="selected-sortiment-image"
+      src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
+      srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
+              assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
+      sizes="(max-width: 768px) 100vw,
+             (min-width: 769px) 50vw" />
     </div>
 
-    <div class="sortiment-selection-wraper">
+    <div class="selected-sortiment desktopOnly">
       <h3>Collaboration/coming soon</h3>
-      <div class="sortiment-selection-item-4"></div>
+      <img class="selected-sortiment-image"
+      src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
+      srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
+              assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
+      sizes="(max-width: 768px) 100vw,
+             (min-width: 769px) 50vw" />
     </div>
 
-    <div class="sortiment-selection-wraper-hidden">
+    <div class="selected-sortiment mobileOnly">
       <h3>Om oss</h3>
-      <div class="sortiment-selection-item-5"></div>
+      <img class="selected-sortiment-image"
+      src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
+      srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
+              assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
+      sizes="(max-width: 768px) 100vw,
+             (min-width: 769px) 50vw" />
     </div>
 
-    <div class="sortiment-selection-wraper-hidden">
+    <div class="selected-sortiment mobileOnly">
       <h3>Hållbarhet</h3>
-      <div class="sortiment-selection-item-6"></div>
+      <img class="selected-sortiment-image"
+      src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
+      srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
+              assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
+      sizes="(max-width: 768px) 100vw,
+             (min-width: 769px) 49vw" />
     </div>
-  </div>
+  </section>
   <!--sortiment selection items end-->
 
   <!-- ANDREA KODAR -->
