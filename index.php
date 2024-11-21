@@ -53,70 +53,86 @@ require __DIR__ . '/header.php'; ?>
 
   <!-- ANDREA KODAR -->
   <!--Hampus bygger-->
-  <div class="hero-inspiration"></div>
+  <section class="hero-inspiration">
+    <!--@TODO: Ersätt Placeholder image-->
+    <img class="hero-inspiration-image"
+      src="assets/Mobil - webp/Inspiration – mobil 362x385.webp"
+      srcset="assets/Mobil - webp/Inspiration – mobil 362x385.webp 362w,
+              assets/Design/PLACEHOLDER Inspiration1416x428.png 1416w"
+      sizes="(max-width: 768px) 100vw,
+             (min-width: 769px) 100vw" />
+    <h2 class="hero-inspiration-header">INSPIRATION</h2>
+  </section>
   <!--om oss och sustainablity är här i mobilt -->
   <!-- sortiment selection items-->
 
 
   <!-- ANDREA KODAR -->
+   <!--@TODO: H1 på mobil men h3 på desktop. Hur lösa? -->
   <section class="selected-sortiment-section">
     <div class="selected-sortiment">
       <h3>News/seasonality</h3>
+      <!--@TODO: Ersätt Placeholder image-->
       <image class="selected-sortiment-image"
-      src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
-      srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
+        src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
+        srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
               assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
-      sizes="(max-width: 768px) 100vw,
+        sizes="(max-width: 768px) 100vw,
              (min-width: 769px) 50vw" />
     </div>
 
     <div class="selected-sortiment">
       <h3>Shop the look</h3>
-      <img class="selected-sortiment-image"          
-      src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
-      srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
+      <!--@TODO: Ersätt Placeholder image-->
+      <img class="selected-sortiment-image"
+        src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
+        srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
               assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
-      sizes="(max-width: 768px) 100vw,
+        sizes="(max-width: 768px) 100vw,
              (min-width: 769px) 50vw" />
     </div>
 
     <div class=" selected-sortiment desktopOnly">
       <h3>Our most beloved</h3>
+      <!--@TODO: Ersätt Placeholder image-->
       <img class="selected-sortiment-image"
-      src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
-      srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
+        src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
+        srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
               assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
-      sizes="(max-width: 768px) 100vw,
+        sizes="(max-width: 768px) 100vw,
              (min-width: 769px) 50vw" />
     </div>
 
     <div class="selected-sortiment desktopOnly">
       <h3>Collaboration/coming soon</h3>
+      <!--@TODO: Ersätt Placeholder image-->
       <img class="selected-sortiment-image"
-      src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
-      srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
+        src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
+        srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
               assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
-      sizes="(max-width: 768px) 100vw,
+        sizes="(max-width: 768px) 100vw,
              (min-width: 769px) 50vw" />
     </div>
 
     <div class="selected-sortiment mobileOnly">
       <h3>Om oss</h3>
+      <!--@TODO: Ersätt Placeholder image-->
       <img class="selected-sortiment-image"
-      src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
-      srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
+        src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
+        srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
               assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
-      sizes="(max-width: 768px) 100vw,
+        sizes="(max-width: 768px) 100vw,
              (min-width: 769px) 50vw" />
     </div>
 
     <div class="selected-sortiment mobileOnly">
       <h3>Hållbarhet</h3>
+      <!--@TODO: Ersätt Placeholder image-->
       <img class="selected-sortiment-image"
-      src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
-      srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
+        src="assets/Mobil - webp/Nyheter – mobil 362x311.webp"
+        srcset="assets/Mobil - webp/Nyheter – mobil 362x311.webp 362w,
               assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
-      sizes="(max-width: 768px) 100vw,
+        sizes="(max-width: 768px) 100vw,
              (min-width: 769px) 49vw" />
     </div>
   </section>
