@@ -35,5 +35,7 @@ declare(strict_types=1);?>
     <div class="footer-text">Cookie policy</div>
  </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
