@@ -79,6 +79,7 @@
     font-size: var(--font-size-desktop-text-small);
     font-weight:var(--font-normal-weight);
   }
+
 }
 
 /*Font sizes on mobile */
@@ -105,11 +106,15 @@
   
   }
 
+  .bold {
+    font-weight: var(--font-bold-weight);
+  }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-   outline: solid 1px red; 
+   /* outline: solid 1px red;  */
   font-family: "Ibm Plex Sans"
 }
 
@@ -238,6 +243,100 @@ gap: 29px;}
   flex-shrink: 0;
 }
 /* Jakubs css */
+
+/*Andrea CSS*/
+/*Configurator*/
+
+@media (min-width: 768px) {
+.configurator-container {
+  display: flex;
+  height: 590px;
+  align-items: center;
+  align-content: center;
+  width:92%;
+}
+
+#configurator-jewelry {
+  max-width: 697px;
+  width:50%;
+  height: 590px;
+
+  aspect-ratio: 697/590;
+}
+
+#configurator-jewelry.silver {
+background: url('assets/Design/image 1.png');
+background-size:contain;
+}
+
+#configurator-jewelry.gold {
+  background: url('assets/Desktop-webp/Hallbarhet_ReGen_Desktop_718x708.webp');
+  background-size:contain;
+  }
+
+.configurator-text {
+  display: flex;
+  max-width: 697px;
+  width: 50%;
+  height: 590px;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 56px;
+}
+
+.configurator-choose-color {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width:160px;
+  height:auto;
+}
+
+.configurator-options {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.configurator-color-options {
+  display: flex;
+}
+
+.configurator-ellipse {
+  width: 22px;
+  height: 22px;
+  border-width: 5px;
+  border-style: solid;
+  border: #000;
+  border-radius: 50%;
+}
+
+.configurator-options .silver {
+background-color: var(--section-light-grey);
+}
+
+.configurator-options .gold{
+background-color: #EBAF6A;
+}
+
+
+
+.configurator-button {
+  border-radius: 6px;
+  background: var(--button-brick, #C36443);
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 237px;
+  border-style: none;
+}
+
+}
 
 /* Hampus CSS */
 /*form start*/
@@ -522,14 +621,14 @@ min-width:49%;
 }
 
 .about-us-image {
-  background: url('assets/Desktop - webp/Om-oss_ReGen_Desktop_500x293.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
+  background: url('assets/Desktop-webp/Om-oss_ReGen_Desktop_500x293.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
 }
 .our-production-image {
-  background: url('assets/Desktop - webp/Kretskort_ReGen_Desktop_500x293.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
+  background: url('assets/Desktop-webp/Kretskort_ReGen_Desktop_500x293.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
 }
 
 .what-sets-us-apart-image {
-  background: url('assets/Desktop - webp/Inte-som-andra_ReGen_Desktop_500x293.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
+  background: url('assets/Desktop-webp/Inte-som-andra_ReGen_Desktop_500x293.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
 }
 
 @media screen and (max-width: 800px) {
