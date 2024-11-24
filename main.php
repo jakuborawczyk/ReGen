@@ -35,10 +35,19 @@ $imagePaths = [
     <section class="openingsContainer">
         <div class="openingsImageContainer">
             <div class="openingsImageText">
-                <p class="openingsText">"Med ReGen utstrålar jag</p>
-                <p class="secondOpeningsText">SJÄLVFÖRTROENDE"</p>
+                <div class="topTextContainer">
+                    <p class="openingsText">"Med ReGen utstrålar jag</p>
+                    <p class="secondOpeningsText">SJÄLVFÖRTROENDE"</p>
+                </div>
                 <div class="subheadingContainer">
-                    
+                    <p class="subheadingText">”Jag trodde inte ett hållbart smycke kunde göra så stor skillnad”</p>
+                    <div class="subheadingStarsContainer desktopOnlySmaller">
+                        <?php for ($i = 0; $i < 5; $i++):   ?>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                                <path d="M14.5 0L17.8677 10.3647H28.7658L19.9491 16.7705L23.3168 27.1353L14.5 20.7295L5.68322 27.1353L9.05093 16.7705L0.234152 10.3647H11.1323L14.5 0Z" fill="white" />
+                            </svg>
+                        <?php endfor; ?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,10 +72,9 @@ $imagePaths = [
 
     <section class=" categoryContainer">
         <?php for ($i = 9; $i < 13; $i++): ?>
-            <div class="categoryIMG" style="background: url('<?php echo $imagePaths[$i]; ?>')"></div>
+            <a class="categoryIMG" href="#" style="background: url('<?php echo $imagePaths[$i]; ?>')"></a>
         <?php endfor; ?>
-        <div class="desktopOnly categoryIMG " style="background-image: url('assets/category5.jpg"></div>
-        </div>
+        <a class="desktopOnly categoryIMG " href="#" style="background-image: url('assets/category5.jpg')"></a>
     </section>
 </body>
 
