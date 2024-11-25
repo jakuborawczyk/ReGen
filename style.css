@@ -107,7 +107,7 @@
   }
 
   .bold {
-    font-weight: var(--font-bold-weight);
+    font-weight: 800;
   }
 
 * {
@@ -315,19 +315,19 @@ gap: 29px;}
 #configurator-jewelry {
   max-width: 697px;
   width:50%;
-  height: 590px;
-
+  height:auto;
+  max-height: 590px;
   aspect-ratio: 697/590;
 }
 
 #configurator-jewelry.silver {
-background: url('assets/Design/image 1.png');
-background-size:contain;
+background: url('assets/CG_bilder/desktop/konfiguratorn/Ring-Color-change-silver-500x500.webp');
+background-size: cover;
 }
 
 #configurator-jewelry.gold {
-  background: url('assets/Desktop-webp/Hallbarhet_ReGen_Desktop_718x708.webp');
-  background-size:contain;
+  background: url('assets/CG_bilder/desktop/konfiguratorn/Ring-Color-change-guld-500x500.webp');
+  background-size: cover;
   }
 
 .configurator-text {
@@ -378,8 +378,6 @@ background-color: var(--section-light-grey);
 background-color: #EBAF6A;
 }
 
-
-
 .configurator-button {
   border-radius: 6px;
   background: var(--button-brick, #C36443);
@@ -388,9 +386,29 @@ background-color: #EBAF6A;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 237px;
+  width: 270px;
   border-style: none;
+  transition: ease-in-out;
 }
+
+.configurator-button:hover {
+  border: 1px solid var(--stroke-brick, #C36443);
+  background: var(--button-white, #FFF);
+  color: var(--text-brick);
+}
+
+
+/* @media screen and (min-width: 1195px)  {
+  .configurator-text p:first-child {
+    display:flex;
+  }
+}
+
+@media screen and (max-width: 1195px)  {
+  .configurator-text p:first-child  {
+    display:none;
+  }
+} */
 
 }
 
@@ -480,7 +498,7 @@ button {
   }
 }
 
-
+/* Vems CSS är det här?? Vilken del tillhör deT? */
 @media (max-width:1416px) 
 {
   .categoryContainer {
@@ -506,49 +524,6 @@ button {
   }
   
 }
-
-/* sortiment-selected-tems start*/
-
-
-.selected-sortiment-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  margin: auto;
-  gap: 10px;
-}
-
-.selected-sortiment {
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.selected-sortiment-image {
-  background-color: grey;
-  object-fit: cover;
-
-}
-
-/* for mobile display */
-@media (max-width: 768px) {
-  .selected-sortiment {
-    width:100%;
-  }
-  
-  .selected-sortiment-image 
-  {
-    min-width: 362px;
-    min-height: 311px;
-    width:90%;
-    height:auto;
-    aspect-ratio: 362 / 311; 
-  }
 
 .openingsContainer {
   min-width: 362px;
@@ -598,6 +573,51 @@ flex-wrap: wrap;
     display: none;
   }
 }
+
+
+/* sortiment-selected-tems start*/
+
+
+.selected-sortiment-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  gap: 10px;
+}
+
+.selected-sortiment {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.selected-sortiment-image {
+  background-color: grey;
+  object-fit: cover;
+
+}
+
+/* for mobile display */
+@media (max-width: 768px) {
+  .selected-sortiment {
+    width:100%;
+  }
+  
+  .selected-sortiment-image 
+  {
+    min-width: 362px;
+    min-height: 311px;
+    width:90%;
+    height:auto;
+    aspect-ratio: 362 / 311; 
+  }
+
 /* 
 For desktop display */
 @media screen and (min-width: 768px) {
@@ -610,7 +630,7 @@ For desktop display */
   }
 
 
-  .selected-sortiment {
+.selected-sortiment {
 gap: 10px;
 margin-left: 0;
 margin-right: 0;
