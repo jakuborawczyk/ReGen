@@ -359,6 +359,7 @@ background-size: cover;
 
 .configurator-color-options {
   display: flex;
+  gap:8px;
 }
 
 .configurator-ellipse {
@@ -389,6 +390,7 @@ background-color: #EBAF6A;
   width: 270px;
   border-style: none;
   transition: ease-in-out;
+  transition-duration: 800ms;
 }
 
 .configurator-button:hover {
@@ -464,12 +466,23 @@ button {
   margin: auto;
   background-color: grey;
   position: relative;
+
+
 }
+
+
 
 .hero-inspiration-image {
   width:100%;
   /* aspect-ratio: 1412/428; */
   object-fit: cover;
+  transition: ease-in-out;
+  transition-duration: 800ms;
+}
+
+
+.hero-inspiration-image:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
 }
 
 .hero-inspiration-header {
@@ -518,10 +531,10 @@ button {
     align-items: flex-end;
     flex-shrink: 0;
   }
-
-  .desktopOnly {
+/*Tog bort den här för den gjorde att mycket annat inte syntes */
+  /* .desktopOnly {
     display: none;
-  }
+  } */
   
 }
 
@@ -568,6 +581,7 @@ button {
     aspect-ratio: 362 / 311; 
   }
 
+/* Vems CSS är det här?? Vilken del tillhör deT? */ 
 .openingsContainer {
   min-width: 362px;
 }
@@ -686,7 +700,6 @@ min-width:49%;
   text-align: center;
   justify-content: center;
   align-items: center;
-  box-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.20) inset;
   opacity:0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.8s;
@@ -782,7 +795,13 @@ overflow: hidden; /* Hide overflowing text */
 text-overflow: ellipsis; /* Add ellipsis (...) for long text */
 
 }
+@media (max-width:1365px) {
+  
+.sustainability-text .sustainability-paragraph {
+  display: none;
+}
 
+}
 .sustainability-text h2 {
   width: 85%;
   /*From Claude AI*/
