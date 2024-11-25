@@ -498,7 +498,7 @@ button {
   }
 }
 
-/* Vems CSS är det här?? Vilken del tillhör deT? */
+/* Vems CSS är det här?? Vilken del tillhör deT? */ 
 @media (max-width:1416px) 
 {
   .categoryContainer {
@@ -524,6 +524,49 @@ button {
   }
   
 }
+
+/* sortiment-selected-tems start*/
+
+
+.selected-sortiment-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  gap: 10px;
+}
+
+.selected-sortiment {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.selected-sortiment-image {
+  background-color: grey;
+  object-fit: cover;
+
+}
+
+/* for mobile display */
+@media (max-width: 768px) {
+  .selected-sortiment {
+    width:100%;
+  }
+  
+  .selected-sortiment-image 
+  {
+    min-width: 362px;
+    min-height: 311px;
+    width:90%;
+    height:auto;
+    aspect-ratio: 362 / 311; 
+  }
 
 .openingsContainer {
   min-width: 362px;
@@ -573,51 +616,6 @@ flex-wrap: wrap;
     display: none;
   }
 }
-
-
-/* sortiment-selected-tems start*/
-
-
-.selected-sortiment-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  margin: auto;
-  gap: 10px;
-}
-
-.selected-sortiment {
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.selected-sortiment-image {
-  background-color: grey;
-  object-fit: cover;
-
-}
-
-/* for mobile display */
-@media (max-width: 768px) {
-  .selected-sortiment {
-    width:100%;
-  }
-  
-  .selected-sortiment-image 
-  {
-    min-width: 362px;
-    min-height: 311px;
-    width:90%;
-    height:auto;
-    aspect-ratio: 362 / 311; 
-  }
-
 /* 
 For desktop display */
 @media screen and (min-width: 768px) {
@@ -630,7 +628,7 @@ For desktop display */
   }
 
 
-.selected-sortiment {
+  .selected-sortiment {
 gap: 10px;
 margin-left: 0;
 margin-right: 0;
