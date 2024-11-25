@@ -30,11 +30,11 @@ require __DIR__ . '/main.php'; ?>
         <p class="small">Välj färg:</p>
         <div class="configurator-options">
           <div class="configurator-color-options">
-            <div class="configurator-ellipse silver" onclick="changeColor()"></div>
+            <div class="configurator-ellipse silver" onclick="changeColorSilver()"></div>
             <p id="silver-text" class="small">Silver</p>
           </div>
           <div class="configurator-color-options">
-            <div class="configurator-ellipse gold" onclick="changeColor()"></div>
+            <div class="configurator-ellipse gold" onclick="changeColorGold()"></div>
             <p id="gold-text" class="small">Guld</p>
           </div>
         </div>
@@ -99,7 +99,7 @@ require __DIR__ . '/main.php'; ?>
   <!--@TODO: H1 på mobil men h3 på desktop. Hur lösa? -->
   <section class="selected-sortiment-section">
     <div class="selected-sortiment">
-      <h3>News/seasonality</h3>
+      <h3>Nyheter</h3>
       <!--@TODO: Ersätt Placeholder image-->
       <image class="selected-sortiment-image"
         src="assets/Mobil-webp/Nyheter – mobil 362x311.webp"
@@ -110,7 +110,7 @@ require __DIR__ . '/main.php'; ?>
     </div>
 
     <div class="selected-sortiment">
-      <h3>Shop the look</h3>
+      <h3>Köp looken</h3>
       <!--@TODO: Ersätt Placeholder image-->
       <img class="selected-sortiment-image"
         src="assets/Mobil-webp/Nyheter – mobil 362x311.webp"
@@ -121,7 +121,7 @@ require __DIR__ . '/main.php'; ?>
     </div>
 
     <div class=" selected-sortiment desktopOnly">
-      <h3>Our most beloved</h3>
+      <h3>Våra favoriter</h3>
       <!--@TODO: Ersätt Placeholder image-->
       <img class="selected-sortiment-image"
         src="assets/Mobil-webp/Nyheter – mobil 362x311.webp"
@@ -132,7 +132,7 @@ require __DIR__ . '/main.php'; ?>
     </div>
 
     <div class="selected-sortiment desktopOnly">
-      <h3>Collaboration/coming soon</h3>
+      <h3>Kommande kollektioner</h3>
       <!--@TODO: Ersätt Placeholder image-->
       <img class="selected-sortiment-image"
         src="assets/Mobil-webp/Nyheter – mobil 362x311.webp"
@@ -194,7 +194,7 @@ require __DIR__ . '/main.php'; ?>
     <img class="sustainability-image" src="assets/Desktop-webp/Hallbarhet_ReGen_Desktop_718x708.webp" />
     <div class="sustainability-text">
       <h2>Hållbarhet på riktigt</h2>
-      <p>Genom att använda återvunna metaller från gamla smycken och elektronikskrot samt laboratorie-framställda ädelstenar, minimerar vi avfall och kan säkerställa en etisk produktion. Vårt sortiment inkluderar även etiskt odlade pärlor och accessoarer med porslin och glas. Självklart är vi certifierade:</p>
+      <p class="sustainability-paragraph">Genom att använda återvunna metaller från gamla smycken och elektronikskrot samt laboratorie-framställda ädelstenar, minimerar vi avfall och kan säkerställa en etisk produktion. Vårt sortiment inkluderar även etiskt odlade pärlor och accessoarer med porslin och glas. Självklart är vi certifierade:</p>
       <div class="sustainability-awards">
         <img class="sustainability-icon" src="assets/Logos SVG/Ecolabel.svg" />
         <img class="sustainability-icon" src="assets/Logos SVG/Fairtrade.svg" />
