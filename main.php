@@ -72,7 +72,7 @@ $imagePaths = [
 
     <section class=" categoryContainer">
         <?php for ($i = 9; $i < 13; $i++): ?>
-            <a class="categoryIMG" href="#" style="background: url('<?php echo $imagePaths[$i]; ?>')"></a>
+            <a class="categoryIMG" href="#" style="background-image: url('<?php echo $imagePaths[$i]; ?>')"></a>
         <?php endfor; ?>
         <a class="desktopOnly categoryIMG " href="#" style="background-image: url('assets/category5.jpg')"></a>
     </section>
