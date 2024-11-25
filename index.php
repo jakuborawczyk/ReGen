@@ -17,33 +17,34 @@ require __DIR__ . '/main.php'; ?>
 
 <body>
 
-  <div class="hero"> <!--utan grid på mobilt-->
-    <!-- Jakub bygger -->
-  </div>
-  <div class="sortiment">
-    <!-- Jakub bygger -->
-  </div>
 
   <!--Andrea kodar-->
   <!--CONFIGURATOR-->
   <section class="configurator-container">
     <div id="configurator-jewelry" class="gold"></div>
     <div class="configurator-text">
-      <h3>Örhängen XXX</h3>
-      <p class="small">Våra örhängen är skapade av återvunna metaller från gamla smycken och elektronik, kombinerade med laboratorieframställda ädelstenar – ett hållbart val som minimerar avfall och garanterar en etisk produktion.</p>
+      <h3>Klackring</h3>
+      <p class="small">Våra ringar är skapade av återvunna metaller från gamla smycken och elektronik, kombinerade med laboratorieframställda ädelstenar – ett hållbart val som minimerar avfall och garanterar en etisk produktion.</p>
       <p class="small bold">1099 SEK</p>
       <div class="configurator-choose-color">
         <p class="small">Välj färg:</p>
         <div class="configurator-options">
           <div class="configurator-color-options">
-            <div class="configurator-ellipse silver" onclick="changeColor()"></div><p id="silver-text" class="small">Silver</p>
+            <div class="configurator-ellipse silver" onclick="changeColor()"></div>
+            <p id="silver-text" class="small">Silver</p>
           </div>
           <div class="configurator-color-options">
-            <div class="configurator-ellipse gold" onclick="changeColor()"></div><p id="gold-text" class="small">Guld</p>
+            <div class="configurator-ellipse gold" onclick="changeColor()"></div>
+            <p id="gold-text" class="small">Guld</p>
           </div>
         </div>
         <button class="configurator-button">
           <p>Lägg till i varukorg</p>
+          <svg width="32" height="25" viewBox="0 0 32 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Icon/Shopping bag &#226;&#128;&#147; large">
+              <path id="shopping_bag" d="M8.0001 24.5C7.4601 24.5 6.9917 24.3017 6.5949 23.9051C6.1983 23.5083 6 23.0399 6 22.4999V7.3001C6 6.7601 6.1983 6.2917 6.5949 5.8949C6.9917 5.4983 7.4601 5.3 8.0001 5.3H11.0001V5.0999C11.0001 3.8199 11.4467 2.7333 12.3399 1.8401C13.2333 0.9467 14.32 0.5 15.6 0.5C16.88 0.5 17.9667 0.9467 18.8601 1.8401C19.7533 2.7333 20.1999 3.8199 20.1999 5.0999V5.3H23.1999C23.7399 5.3 24.2083 5.4983 24.6051 5.8949C25.0017 6.2917 25.2 6.7601 25.2 7.3001V22.4999C25.2 23.0399 25.0017 23.5083 24.6051 23.9051C24.2083 24.3017 23.7399 24.5 23.1999 24.5H8.0001ZM8.0001 22.4999H23.1999V7.3001H20.1999V9.8999C20.1999 10.1833 20.1038 10.4208 19.9116 10.6124C19.7192 10.8042 19.4808 10.9001 19.1964 10.9001C18.9122 10.9001 18.6751 10.8042 18.4851 10.6124C18.2951 10.4208 18.2001 10.1833 18.2001 9.8999V7.3001H12.9999V9.8999C12.9999 10.1833 12.9038 10.4208 12.7116 10.6124C12.5192 10.8042 12.2808 10.9001 11.9964 10.9001C11.7122 10.9001 11.4751 10.8042 11.2851 10.6124C11.0951 10.4208 11.0001 10.1833 11.0001 9.8999V7.3001H8.0001V22.4999ZM12.9999 5.3H18.2001V5.0999C18.2001 4.3733 17.9484 3.7583 17.445 3.2549C16.9416 2.7517 16.3266 2.5001 15.6 2.5001C14.8734 2.5001 14.2584 2.7517 13.755 3.2549C13.2516 3.7583 12.9999 4.3733 12.9999 5.0999V5.3Z" fill="white" />
+            </g>
+          </svg>
         </button>
 
       </div>
@@ -190,7 +191,7 @@ require __DIR__ . '/main.php'; ?>
   <!-- Andrea bygger -->
   <!-- SUSTAINABILITY -->
   <section class="sustainability-desktop">
-    <img class="sustainability-image" src="assets/Desktop - webp/Hallbarhet_ReGen_Desktop_718x708.webp" />
+    <img class="sustainability-image" src="assets/Desktop-webp/Hallbarhet_ReGen_Desktop_718x708.webp" />
     <div class="sustainability-text">
       <h2>Hållbarhet på riktigt</h2>
       <p>Genom att använda återvunna metaller från gamla smycken och elektronikskrot samt laboratorie-framställda ädelstenar, minimerar vi avfall och kan säkerställa en etisk produktion. Vårt sortiment inkluderar även etiskt odlade pärlor och accessoarer med porslin och glas. Självklart är vi certifierade:</p>
