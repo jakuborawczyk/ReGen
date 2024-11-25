@@ -20,7 +20,7 @@ require __DIR__ . '/main.php'; ?>
 
   <!--Andrea kodar-->
   <!--CONFIGURATOR-->
-  <section class="configurator-container">
+  <section class="configurator-container desktopOnly">
     <div id="configurator-jewelry" class="gold"></div>
     <div class="configurator-text">
       <h3>Klackring</h3>
