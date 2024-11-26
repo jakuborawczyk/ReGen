@@ -2,7 +2,7 @@
 
 $imagePaths = [
     // Images 1-9 are for Collage
-    'assets/Desktop-webp/collage1.webp',  //Collage Image 1
+    'assets/CG_bilder/desktop/collage1.webp',  //Collage Image 1
     'assets/Desktop-webp/collage2.webp',  //Collage Image 2
     'assets/Desktop-webp/collage3.webp',  //Collage Image 3
     'assets/Desktop-webp/collage4.webp',  //Collage Image 4
@@ -10,7 +10,7 @@ $imagePaths = [
     'assets/Desktop-webp/collage6.webp',  //Collage Image 6
     'assets/Desktop-webp/collage7.webp',  //Collage Image 7
     'assets/collage8.webp',  //Collage Image 8
-    'assets/Desktop-webp/collage9.webp',  //Collage Image 9
+    'assets//CG_bilder/desktop/collage9.webp',  //Collage Image 9
 
     // // Images for Categories 1-5
     // 'assets/Desktop-webp/category1.jpg', //Category Image 1
@@ -54,17 +54,23 @@ $imagePaths = [
         <aside class="collageContainer">
             <div class="topCollage">
                 <?php for ($i = 0; $i < 3; $i++): ?>
-                    <div class="collageIMG" style="background: url('<?php echo $imagePaths[$i]; ?>') "></div>
+                    <div class="collageIMG" style="background: url('<?php echo $imagePaths[$i]; ?>');  background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;  "></div>
                 <?php endfor; ?>
             </div>
             <div class="midCollage">
                 <?php for ($i = 3; $i < 6; $i++): ?>
-                    <div class="collageIMG" style="background: url('<?php echo $imagePaths[$i]; ?>')"></div>
+                    <div class="collageIMG" style="background: url('<?php echo $imagePaths[$i]; ?>'); background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; "></div>
                 <?php endfor; ?>
             </div>
             <div class="botCollage">
                 <?php for ($i = 6; $i < 9; $i++): ?>
-                    <div class="collageIMG" style="background: url('<?php echo $imagePaths[$i]; ?>')"></div>
+                    <div class="collageIMG" style="background: url('<?php echo $imagePaths[$i]; ?>'); background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; "></div>
                 <?php endfor; ?>
             </div>
         </aside>
@@ -72,9 +78,9 @@ $imagePaths = [
 
     <section class=" categoryContainer">
         <?php for ($i = 9; $i < 13; $i++): ?>
-            <a class="categoryIMG" href="#" style="background-image: url('<?php echo $imagePaths[$i]; ?>')"></a>
+            <div class="categoryIMG" href="#" style="background-image: url('<?php echo $imagePaths[$i]; ?>') "></div>
         <?php endfor; ?>
-        <a class="desktopOnly categoryIMG " href="#" style="background-image: url('assets/category5.jpg')"></a>
+        <div class="categoryIMG fiftCategory" href="#" style="background-image: url('assets/category5.jpg')"></div>
     </section>
 </body>
 

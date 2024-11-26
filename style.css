@@ -336,7 +336,7 @@ gap: 2PX;
 
 .collageIMG {
   width: 14.75rem;
-  height: 9.375rem;
+  height: 9.375rem; 
 }
 /* Container for categories */
 .categoryContainer {
@@ -355,12 +355,13 @@ gap: 29px;}
   align-items: flex-end;
   flex-shrink: 0;
   background-color: gray;
-  transform: translateY(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center; /* Center the image */
 }
 .categoryIMG:hover {
   cursor: pointer;
-  transform: scale(1.05);
+
 }
 /* Jakubs css */
 
@@ -642,6 +643,9 @@ button {
     justify-content: center;
     align-items: flex-end;
     flex-shrink: 0;
+  }
+  .fiftCategory{
+    display: none;
   }
 /*Tog bort den här för den gjorde att mycket annat inte syntes */
   /* .desktopOnly {
