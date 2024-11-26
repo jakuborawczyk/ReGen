@@ -17,6 +17,35 @@ require __DIR__ . '/main.php'; ?>
 
 <body>
 
+  <!--form start-->
+  <div class="form-text">
+    <p>BLI MEDLEM OCH FÅ</p>
+    <h2>15% rabatt på ditt första köp</h2>
+  </div>
+
+  <form action="process_email.php" method="POST">
+    <label for="email">E-postadress*</label>
+    <br>
+    <input type="email" id="email" name="email" required>
+
+    <div class="checkboxes">
+      <label class="checkbox-container">
+        <label class="checkbox-container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          Jag anmäler mig till nyhetsbrevet*
+        </label>
+
+        <input type="checkbox">
+        <span class="checkmark"></span>
+        Jag har läst och godkänner <a href="01.php"> ReGens sekresstespolicy</a>*
+      </label>
+
+    </div>
+    </div>
+    <button type="submit">SKICKA</button>
+  </form>
+  <!--form end-->
 
   <!--Andrea kodar-->
   <!--CONFIGURATOR-->
@@ -50,34 +79,7 @@ require __DIR__ . '/main.php'; ?>
       </div>
   </section>
 
-  <!--form start-->
-  <div class="form-text">
-    <p>BLI MEDLEM OCH FÅ</p>
-    <h2>15% rabatt på ditt första köp</h2>
-  </div>
 
-  <form action="process_email.php" method="POST">
-    <label for="email">E-postadress*</label>
-    <br>
-    <input type="email" id="email" name="email" required>
-
-    <div class="checkboxes">
-      <label class="checkbox-container">
-        <input type="checkbox">
-        <span class="checkmark"></span>
-        Jag har läst och godkänner <a href="01.php"> ReGens sekresstespolicy</a>*
-      </label>
-
-      <label class="checkbox-container">
-        <input type="checkbox">
-        <span class="checkmark"></span>
-        Jag anmäler mig till nyhetsbrevet*
-      </label>
-    </div>
-    </div>
-    <button type="submit">SKICKA</button>
-  </form>
-  <!--form end-->
 
   <!-- ANDREA KODAR -->
   <!--Hampus bygger-->
