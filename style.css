@@ -114,12 +114,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-   /* outline: solid 1px red;  */
-  font-family: "Ibm Plex Sans"
+   outline: solid 1px red; 
+  font-family: "Ibm Plex Sans";
 }
 
 body {
-    margin: 10rem 0 0 0;
+  margin: 10rem 0 0 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -373,8 +373,8 @@ gap: 29px;}
   height: 590px;
   align-items: center;
   align-content: center;
-  width:92%;
-  margin: auto;
+  width:100%;
+  padding: 0px 48px;
 }
 
 #configurator-jewelry {
@@ -399,8 +399,12 @@ background-size: cover;
   display: flex;
   max-width: 697px;
   width: 50%;
-  height: 590px;
-  padding: 50px;
+  max-height: 590px;
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  padding-top: 56px;
+  padding-bottom: 56px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -568,13 +572,12 @@ button {
 .hero-inspiration {
   display: flex;
   justify-content: center;
-  max-width: 1412px;
-  min-width: 100%;
+  max-width: 1512px;
+  width: 100%;
   max-height: 270px;
   margin: auto;
-  background-color: grey;
   position: relative;
-
+  padding: 0px 48px;
 
 }
 
@@ -657,8 +660,10 @@ button {
   align-items: center;
   flex-direction: row;
   width: 100%;
+  max-width:1512px;
   margin: auto;
   gap: 10px;
+  padding: 0px 48px;
 }
 
 .selected-sortiment {
@@ -867,31 +872,37 @@ min-width:49%;
 @media (min-width: 768px) {
 .sustainability-desktop {
   display: flex;
-  width: 93%;
+  max-width: calc(100%-3rem);
   max-width: 1412px;
   justify-content: center;
   align-items: center;
-  height: auto;
+  max-height: fit-content;
   background-color: var(--section-light-grey);
+  margin: 0 3rem;
 }
 
 .sustainability-image {
   /* @TODO: Figure out how to scale this image properly */
   max-width: 50%;
-  max-height: 100%;
+  max-height: fit-content;
+}
+
+.sustainability-image img {
+  max-width: 100%;
+  max-height: fit-content;
+  object-fit: cover;
 }
 
 .sustainability-text {
   display: flex;
-  padding-left: 50px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
+  max-width:50%;
   height:100%;
   gap: 36px;
-  padding: 50px 0px 0px 50px;
+  padding: 50px;
   /*From Claude AI*/
-  max-height: 647px; /* Set a maximum height */
   overflow: hidden; /* Prevent unexpected growth */
 }
 
@@ -930,7 +941,7 @@ img.sustainability-icon {
   /*@TODO: Figure out how to make she images shrink properly*/
     /*@TODO: Figure out how to make she images shrink properly*/
     width: 100%;
-    max-height: 50px; /* Limits individual icon size */
+    max-height: 120px; /* Limits individual icon size */
     height: auto;
     object-fit: contain;
     /* Add these for debugging */
@@ -945,16 +956,20 @@ button.sustainability-button {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: var(--text-white, #FFF);
+  text-align: center;
+  font-size: var(--font-size-desktop-text);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 6px;
+  background: var(--button-primary-green);
+  border: 0;
+}
 
-color: var(--text-white, #FFF);
-text-align: center;
-font-size: var(--font-size-desktop-text);
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-border-radius: 6px;
-background: var(--button-primary-green);
-border: 0;
+button.sustainability-button p {
+  padding: 0;
+  margin: 0;
 }
 }
 
@@ -988,10 +1003,14 @@ border: 0;
     font-size: 1.5rem;
   }
 
-  img.follow-us {
-    width: 90%;
-    background-size: cover;
-    aspect-ratio: 1;
+  .follow-us img {
+    max-width: 100%;
+    max-height: fit-content;
+    object-fit: cover;
+    /* object-fit: contain; */
+    aspect-ratio: 707/623;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
 }
 
@@ -1018,32 +1037,39 @@ border: 0;
   }
 
   .social-media {
-    width:85%;
+    width:100%;
     display: flex;
-    gap: 24px;
+    gap: 24px;        
+    align-items: center;
 
   }
   .social-media-desktop {
     display: flex;
-    width: 90w;
+    max-width:calc(100% - 3rem);
     max-width: 1416px;
     justify-content: center;
     align-items: center;
-    margin: 120px auto;
-    height: 45vw;
+    /* margin: 120px auto; */
+    max-height:fit-content;
     border-radius: 30px;
     background-color: var(--section-light-grey);
+    margin: 0px 3rem;
   }
 
   .social-media-text {
     font-size: 3rem;
   }
 
+  .social-media-links-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
   .follow-us {
-    height: 45vw;
-    max-height: 633px;
-    width: 45vw;
-    max-width: 633px;
+    height: fit-content;
+    /* max-height: 633px; */
+    width: 50%;
     margin-left:auto;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -1052,16 +1078,25 @@ border: 0;
       aspect-ratio:1; */
   }
 
+  .follow-us img {
+    max-width: 100%;
+    max-height: fit-content;
+    object-fit: cover;
+    aspect-ratio: 707/623;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
   .contact-desktop {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 45%;
-    height: 45%;
+    max-width: 100%;
+    max-height: 100%;
     max-width:708px;
+    width:50%;
     gap: 40px;
-    padding: 58px 50px;
+    padding: 58px 50px 58px 93px;
   }
 }
 
@@ -1110,6 +1145,7 @@ footer {
 .footer-logo {
   min-width: 90px;
   height: 47px;
+  margin: 0px 120px;
 }
 
 .footer-follow-us {
