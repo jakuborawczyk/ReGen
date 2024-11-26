@@ -13,7 +13,7 @@ declare(strict_types=1);?>
     <img class="footer-some" src="assets/Logos SVG/icon linkedin.svg">
  </div>
  <div class="footer-payment-information-desktop">
-    <img class="footer-payment-icon-desktop klarna" src="assets/Logos SVG/klarna-seeklogo.svg" />
+    <img class="footer-payment-icon-desktop klarna" src="assets/Logos SVG/Klarna-logga-stor.svg" />
     <img class="footer-payment-icon-desktop" src="assets/Logos SVG/Swish lodrat farg.svg"/>
     <img class="footer-payment-icon-desktop" src="assets/Logos webp/Trygg E-handel farg.webp" />
  </div>
