@@ -145,25 +145,33 @@ require __DIR__ . '/main.php'; ?>
     </div>
 
     <div class="selected-sortiment mobileOnly">
-      <h3>Om oss</h3>
+      <h3 id="about-us-text-mobile">Om oss</h3>
       <!--@TODO: Ersätt Placeholder image-->
       <img class="selected-sortiment-image"
-        src="assets/Mobil-webp/Nyheter – mobil 362x311.webp"
-        srcset="assets/Mobil-webp/Nyheter – mobil 362x311.webp 362w,
+        src="assets/CG_bilder/mobil/om_oss_mobil.webp"
+        srcset="assets/CG_bilder/mobil/om_oss_mobil.webp,
               assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
         sizes="(max-width: 768px) 100vw,
              (min-width: 769px) 50vw" />
+             <button id="about-us-button-mobile"><p>Lär känna oss bättre</p><svg width="33" height="19" viewBox="0 0 33 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.5 9.5H30.5M30.5 9.5L23.967 2.5M30.5 9.5L23.967 16.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
     </div>
 
     <div class="selected-sortiment mobileOnly">
       <h3>Hållbarhet</h3>
       <!--@TODO: Ersätt Placeholder image-->
       <img class="selected-sortiment-image"
-        src="assets/Mobil-webp/Nyheter – mobil 362x311.webp"
-        srcset="assets/Mobil-webp/Nyheter – mobil 362x311.webp 362w,
+        src="assets/Mobil-webp/Hallbarhet – mobil 402x418.webp"
+        srcset="assets/Mobil-webp/Hallbarhet – mobil 402x418.webp,
               assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
         sizes="(max-width: 768px) 100vw,
              (min-width: 769px) 49vw" />
+             <button id="sustainability-button-mobile"><p>Läs mer om vårt hållbarhetsarbete</p><svg width="33" height="19" viewBox="0 0 33 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.5 9.5H30.5M30.5 9.5L23.967 2.5M30.5 9.5L23.967 16.5" stroke="var(--text-black)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</button>
     </div>
   </section>
   <!--sortiment selection items end-->
