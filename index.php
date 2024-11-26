@@ -43,7 +43,7 @@ require __DIR__ . '/main.php'; ?>
 
     </div>
     </div>
-    <button type="submit">SKICKA</button>
+    <button type="submit" class="form-button">SKICKA</button>
   </form>
   <!--form end-->
 
