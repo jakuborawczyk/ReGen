@@ -32,6 +32,24 @@ $collageColors=[
     '#EBAF6A',//collage6
     '#F8B382'//collage8
 ];
+$altTexts=[
+    //collages 1-9
+'Silvriga örhängn i en ask med mörkröd insida',
+'Vitt bakgrund',
+'Inredningstidningar med doftljus och keramikfat som har ringar med stenar på',
+'Mattgråsvart bakgrund',
+'ReGen logga',
+'Gulaktigt bakgrund',
+'Silvriga smycken i mjuka former på vit tygliknande bakgrund',
+'OrangeRosa bakgrund',
+'Silvrig ring i en ask med tegelfärgad insida',
+//Sortiment/Categories
+'Guldigt halsband med en vit pärla på tegelfärgad bakgrund',
+'Guldigt armband med två pärlor på tegelfärgad bakgrund',
+'Silvriga örhängen på tegelfärgad bakgrund',
+'Silvrig ring på tegelfärgad bakgrund',
+'Silvrig ring i en ask på tegelfärgad bakgrund',
+];
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +64,7 @@ $collageColors=[
 
 <body>
     <section class="openingsContainer">
-        <div class="openingsImageContainer">
+        <div class="openingsImageContainer" alt="Kvinnligt ansikte och dekolletage med beige blus, silvrig ring och silvriga örhängen">
             <div class="openingsImageText">
                 <div class="topTextContainer">
                     <p class="openingsText">"Med ReGen utstrålar jag</p>
@@ -67,21 +85,21 @@ $collageColors=[
         <aside class="collageContainer">
             <div class="topCollage">
                 <?php for ($i = 0; $i < 3; $i++): ?>
-                    <div class="collageIMG" style="background: url('<?php echo $imagePaths[$i]; ?>');  background-size: cover; 
+                    <div class="collageIMG" alt="<?php echo $altTexts[$i]; ?>" style="background: url('<?php echo $imagePaths[$i]; ?>');  background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat;  "></div>
                 <?php endfor; ?>
             </div>
             <div class="midCollage">
                 <?php for ($i = 3; $i < 6; $i++): ?>
-                    <div class="collageIMG" style="background: url('<?php echo $imagePaths[$i]; ?>'); background-size: cover; 
+                    <div class="collageIMG" alt="<?php echo $altTexts[$i]; ?>" style="background: url('<?php echo $imagePaths[$i]; ?>'); background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat; "></div>
                 <?php endfor; ?>
             </div>
             <div class="botCollage">
                 <?php for ($i = 6; $i < 9; $i++): ?>
-                    <div class="collageIMG" style="background: url('<?php echo $imagePaths[$i]; ?>'); background-size: cover; 
+                    <div class="collageIMG" alt="<?php echo $altTexts[$i]; ?>" style="background: url('<?php echo $imagePaths[$i]; ?>'); background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat; "></div>
                 <?php endfor; ?>
@@ -94,6 +112,7 @@ $collageColors=[
             <div
                 class="categoryIMG"
                 href="#"
+                alt="<?php echo $altTexts[$i]; ?>"
                 style="
                 background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.50) 100%), url('<?php echo $imagePaths[$i]; ?>');
                 background-color: lightgray; 
@@ -104,6 +123,7 @@ $collageColors=[
         <?php endfor; ?>
         <div
             class="categoryIMG fiftCategory"
+            alt="<?php echo $altTexts[13]; ?>"
             href="#"
             style="
             background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.50) 100%), url('<?php echo $imagePaths[13]; ?>');
