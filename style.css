@@ -742,7 +742,7 @@ input[type="email"]{
 /* For desktop*/
 @media (min-width: 768px) {
 .hero-inspiration-header {
-  top: 113px;
+  top: 194px;
   aspect-ratio: 1412/428;
 }
 
