@@ -53,8 +53,8 @@ require __DIR__ . '/main.php'; ?>
     <div id="configurator-jewelry" class="gold" title="Klackring med ReGens logotyp på framsida"></div>
     <div class="configurator-text">
       <h3>Klackring</h3>
-      <p class="small">Våra ringar är skapade av återvunna metaller från gamla smycken och elektronik, kombinerade med laboratorieframställda ädelstenar – ett hållbart val som minimerar avfall och garanterar en etisk produktion.</p>
-      <p class="small bold">1099 SEK</p>
+      <p class="small">Våra ringar är skapade av återvunna metaller från gamla smycken och elektronik, kombinerade med laboratorieframställda ädelstenar – ett hållbart val som minimerar avfall och garanterar en etisk produktion.<br><br>
+      <strong>1099 SEK</strong></p>
       <div class="configurator-choose-color">
         <p class="small">Välj färg:</p>
         <div class="configurator-options">
@@ -122,7 +122,7 @@ require __DIR__ . '/main.php'; ?>
         sizes="(max-width: 768px) 100vw,
              (min-width: 769px) 50vw" />
       <button class="read-more mobileOnly">
-        <h1>Läs mer</h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="17" viewBox="0 0 30 17" fill="none">
+        <h1>Se mer</h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="17" viewBox="0 0 30 17" fill="none">
           <path d="M1 8.5H29M29 8.5L22.467 1.5M29 8.5L22.467 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </button>
@@ -149,7 +149,7 @@ require __DIR__ . '/main.php'; ?>
         sizes="(max-width: 768px) 100vw,
              (min-width: 769px) 50vw" />
       <button class="read-more mobileOnly">
-        <h1>Läs mer</h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="17" viewBox="0 0 30 17" fill="none">
+        <h1>Se mer</h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="17" viewBox="0 0 30 17" fill="none">
           <path d="M1 8.5H29M29 8.5L22.467 1.5M29 8.5L22.467 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </button>
