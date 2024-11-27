@@ -421,6 +421,7 @@ gap: 29px;}
   height:auto;
   max-height: 590px;
   aspect-ratio: 697/590;
+  margin: 0 3.34rem;
 }
 
 #configurator-jewelry.silver {
@@ -447,6 +448,10 @@ background-size: cover;
   justify-content: center;
   align-items: flex-start;
   gap: 56px;
+}
+
+.configurator-text p{
+  width: 89%;
 }
 
 .configurator-choose-color {
