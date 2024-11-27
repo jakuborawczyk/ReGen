@@ -256,7 +256,7 @@ require __DIR__ . '/main.php'; ?>
   <section class="social-media-desktop">
     <div class="contact-desktop">
       <div class="social-media-text">
-        <h2>Följ vår resa på Instagram</h2>
+        <h2>Följ vår resa på <br> Sociala medier</h2>
       </div>
       <div class="social-media-links-desktop">
         <div class="social-media">

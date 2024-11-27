@@ -1321,6 +1321,10 @@ button.sustainability-button p {
     font-size: 3rem;
   }
 
+  .social-media-text h2 {
+    font-weight: bold;
+  }
+
   .social-media-links-desktop {
     display: flex;
     flex-direction: column;
