@@ -85,12 +85,24 @@ require __DIR__ . '/main.php'; ?>
   <!--Hampus bygger-->
   <section class="hero-inspiration">
     <!--@TODO: Ersätt Placeholder image-->
-    <img class="hero-inspiration-image"
-      src="assets/Mobil-webp/Inspiration – mobil 362x385.webp"
+    <!-- <img class="hero-inspiration-image"
+      src="assets/CG_bilder/mobil/Inspirationshero-mobilFotograferadBakgrund_Sebastian_Moreno_Ring Mobil 362x385.webp"
       srcset="assets/Mobil-webp/Inspiration – mobil 362x385.webp 362w,
-              assets/Design/PLACEHOLDER Inspiration1416x428.png 1416w"
+              assets/Desktop-webp/ringaronstone.webp 1416w"
       sizes="(max-width: 768px) 100vw,
-             (min-width: 769px) 100vw" />
+             (min-width: 769px) 100vw" /> -->
+
+    <div class="hero-inspiration-image">
+    <image class="mobileOnly"
+        src="assets/CG_bilder/mobil/Inspirationshero-mobilFotograferadBakgrund_Sebastian_Moreno_Ring Mobil 362x385.webp" />
+      <image class="desktopOnly" src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp" />
+    
+    <!-- <img
+      src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp"
+      srcset="assets/CG_bilder/mobil/Inspirationshero-mobilFotograferadBakgrund_Sebastian_Moreno_Ring Mobil 362x385.webp 362w, 
+             assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp 1416w"
+      sizes="(max-width: 768px) 362px, (min-width: 769px) 1416px" /> -->
+    </div>
     <h1 class="hero-inspiration-header">INSPIRATION</h1>
   </section>
   <!--om oss och sustainablity är här i mobilt -->
@@ -100,7 +112,7 @@ require __DIR__ . '/main.php'; ?>
   <!-- ANDREA KODAR -->
   <!--@TODO: H1 på mobil men h3 på desktop. Hur lösa? -->
   <section class="selected-sortiment-section">
-    <div class="selected-sortiment">
+    <div class="selected-sortiment selected-sortiment-margin-mobile">
       <h3>Nyheter</h3>
       <!--@TODO: Ersätt Placeholder image-->
       <image class="selected-sortiment-image"
@@ -127,7 +139,7 @@ require __DIR__ . '/main.php'; ?>
              (min-width: 769px) 50vw" />
     </div>
 
-    <div class=" selected-sortiment">
+    <div class=" selected-sortiment selected-sortiment-margin-mobile">
       <h3>Våra favoriter</h3>
       <!--@TODO: Ersätt Placeholder image-->
       <img class="selected-sortiment-image"
