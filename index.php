@@ -26,35 +26,36 @@ require __DIR__ . '/main.php'; ?>
   <form action="process_email.php" method="POST">
     <label for="email">E-postadress*</label>
     <br>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" required placeholder="namn@mail.se">
 
     <div class="checkboxes">
       <label class="checkbox-container">
-        <label class="checkbox-container">
-          <input type="checkbox">
-          <span class="checkmark"></span>
-          Jag anmäler mig till nyhetsbrevet*
-        </label>
-
         <input type="checkbox">
         <span class="checkmark"></span>
-        Jag har läst och godkänner <a href="01.php"> ReGens sekresstespolicy</a>*
+        Jag anmäler mig till nyhetsbrevet*
       </label>
+
+      <label class="checkbox-container">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+        Jag har läst och godkänner <a href=""> ReGens sekrestesspolicy</a>*
+      </label>
+      <button type="submit" class="form-button">Skicka</button>
 
     </div>
     </div>
-    <button type="submit" class="form-button">SKICKA</button>
   </form>
   <!--form end-->
 
   <!--Andrea kodar-->
   <!--CONFIGURATOR-->
   <section class="configurator-container desktopOnly">
-    <div id="configurator-jewelry" class="gold"></div>
+    <div id="configurator-jewelry" class="gold" title="Klackring med ReGens logotyp på framsida"></div>
     <div class="configurator-text">
       <h3>Klackring</h3>
-      <p class="small">Våra ringar är skapade av återvunna metaller från gamla smycken och elektronik, kombinerade med laboratorieframställda ädelstenar – ett hållbart val som minimerar avfall och garanterar en etisk produktion.</p>
-      <p class="small bold">1099 SEK</p>
+      <p class="small">Våra ringar är skapade av återvunna metaller från gamla smycken och elektronik, kombinerade med laboratorieframställda ädelstenar – ett hållbart val som minimerar avfall och garanterar en etisk produktion.<br><br>
+        <strong>1099 SEK</strong>
+      </p>
       <div class="configurator-choose-color">
         <p class="small">Välj färg:</p>
         <div class="configurator-options">
@@ -93,15 +94,9 @@ require __DIR__ . '/main.php'; ?>
              (min-width: 769px) 100vw" /> -->
 
     <div class="hero-inspiration-image">
-    <image class="mobileOnly"
+      <image class="mobileOnly" alt="Silvrig ring ligger på sten utomhus i solljus"
         src="assets/CG_bilder/mobil/Inspirationshero-mobilFotograferadBakgrund_Sebastian_Moreno_Ring Mobil 362x385.webp" />
-      <image class="desktopOnly" src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp" />
-    
-    <!-- <img
-      src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp"
-      srcset="assets/CG_bilder/mobil/Inspirationshero-mobilFotograferadBakgrund_Sebastian_Moreno_Ring Mobil 362x385.webp 362w, 
-             assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp 1416w"
-      sizes="(max-width: 768px) 362px, (min-width: 769px) 1416px" /> -->
+      <image class="desktopOnly" alt="Silvrig ring ligger på sten utomhus i solljus" src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp" />
     </div>
     <h1 class="hero-inspiration-header">INSPIRATION</h1>
   </section>
@@ -115,14 +110,14 @@ require __DIR__ . '/main.php'; ?>
     <div class="selected-sortiment selected-sortiment-margin-mobile">
       <h3>Nyheter</h3>
       <!--@TODO: Ersätt Placeholder image-->
-      <image class="selected-sortiment-image"
+      <image class="selected-sortiment-image" alt="Silvriga smycken ligger på ett bord och ett halsband som hänger över"
         src="assets/Mobil-webp/Nyheter – mobil 362x311.webp"
         srcset="assets/Mobil-webp/Nyheter – mobil 362x311.webp,
               assets/Desktop-webp/Nyheter_ReGen_Desktop_658x300.webp"
         sizes="(max-width: 768px) 100vw,
              (min-width: 769px) 50vw" />
       <button class="read-more mobileOnly">
-        <h1>Läs mer</h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="17" viewBox="0 0 30 17" fill="none">
+        <h1>Se mer</h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="17" viewBox="0 0 30 17" fill="none">
           <path d="M1 8.5H29M29 8.5L22.467 1.5M29 8.5L22.467 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </button>
@@ -131,7 +126,7 @@ require __DIR__ . '/main.php'; ?>
     <div class="selected-sortiment desktopOnly">
       <h3>Köp looken</h3>
       <!--@TODO: Ersätt Placeholder image-->
-      <img class="selected-sortiment-image"
+      <img class="selected-sortiment-image" alt="Dekolletage med två guldiga halsband"
         src="assets/Desktop-webp/Kop-looken_ReGen_Desktop_658x300.webp"
         srcset="assets/Desktop-webp/Kop-looken_ReGen_Desktop_658x300.webp,
               assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
@@ -142,14 +137,14 @@ require __DIR__ . '/main.php'; ?>
     <div class=" selected-sortiment selected-sortiment-margin-mobile">
       <h3>Våra favoriter</h3>
       <!--@TODO: Ersätt Placeholder image-->
-      <img class="selected-sortiment-image"
+      <img class="selected-sortiment-image" alt="Guldiga ringar och örhängen ligger på ett fat i keramik"
         src="assets/Mobil-webp/Våra favoriter – mobil 362x311.webp"
         srcset="assets/Mobil-webp/Våra favoriter – mobil 362x311.webp,
               assets/Desktop-webp/Favoriter_ReGen_Desktop_658x300.webp"
         sizes="(max-width: 768px) 100vw,
              (min-width: 769px) 50vw" />
       <button class="read-more mobileOnly">
-        <h1>Läs mer</h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="17" viewBox="0 0 30 17" fill="none">
+        <h1>Se mer</h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="17" viewBox="0 0 30 17" fill="none">
           <path d="M1 8.5H29M29 8.5L22.467 1.5M29 8.5L22.467 15.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </button>
@@ -158,7 +153,7 @@ require __DIR__ . '/main.php'; ?>
     <div class="selected-sortiment desktopOnly">
       <h3>Kommande kollektioner</h3>
       <!--@TODO: Ersätt Placeholder image-->
-      <img class="selected-sortiment-image"
+      <img class="selected-sortiment-image" alt="Två händer smider örhänge med stenar"
         src="assets/Desktop-webp/Kommande_ReGen_Desktop_658x300.webp"
         srcset="assets/Mobil-webp/Nyheter – mobil 362x311.webp 362w,
               assets/Desktop-webp/Kommande_ReGen_Desktop_658x300.webp"
@@ -261,7 +256,7 @@ require __DIR__ . '/main.php'; ?>
   <section class="social-media-desktop">
     <div class="contact-desktop">
       <div class="social-media-text">
-        <h2>Följ vår resa på Instagram</h2>
+        <h2>Följ vår resa på <br> Sociala medier</h2>
       </div>
       <div class="social-media-links-desktop">
         <div class="social-media">

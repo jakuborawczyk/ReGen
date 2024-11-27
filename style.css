@@ -146,7 +146,7 @@ body {
 
   @media (min-width: 768px) { 
     body {
-    gap: 2.5rem;
+    gap: 7.5rem;
   }
 }
 /* Tags to use for desktop or mobile display*/
@@ -442,6 +442,7 @@ gap: 29px;}
   height:auto;
   max-height: 590px;
   aspect-ratio: 697/590;
+  margin: 0 3.34rem;
 }
 
 #configurator-jewelry.silver {
@@ -468,6 +469,10 @@ background-size: cover;
   justify-content: center;
   align-items: flex-start;
   gap: 56px;
+}
+
+.configurator-text p{
+  width: 89%;
 }
 
 .configurator-choose-color {
@@ -548,6 +553,7 @@ background-color: #EBAF6A;
 .form-text p,h2{
   display: flex;
   justify-content: center;
+  color: #373737;
 }
 
 .form-text p{
@@ -570,6 +576,33 @@ input[type="email"]{
   border: 1px solid #E9DAD6;
   padding: 10px;  
   height: 72px;   
+}
+
+.checkbox-container input[type="checkbox"] {
+  
+  width: 20px;
+  height: 20px;
+
+  appearance: none; 
+  border: 2px solid #d9d9d9; 
+  border-radius: 4px; 
+  background-color: #d9d9d9; 
+  cursor: pointer;
+
+  &:checked {
+      background-color: #d9d9d9; 
+      border-color: #d9d9d9;
+      position: relative;
+  }
+
+  &:checked::after {
+      content: '✓';
+      color: #C36443;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
 }
 
 .checkbox-container a {
@@ -610,7 +643,17 @@ input[type="email"]{
 
 .checkbox-container {
     display: flex;
-    align-items:flex-start;
+    flex-wrap: wrap; /* Allows items to wrap to next line */
+    align-items: center; /* Vertically centers items */
+    gap: 5px; /* Adds space between items */
+}
+
+.checkbox-container a {
+  display: block; /* Places link on a new line */
+  color: #C36443; /* Changes link color to orange */
+  text-decoration: underline; /* Adds underline to the link */
+  margin-left: 30px; /* Indents the link to align with text */
+  font-size: 14px; /* Slightly smaller font size */
 }
 
   .form-button {
@@ -634,10 +677,14 @@ input[type="email"]{
 
   .checkboxes {
     display: flex;
-    flex-direction: row;
     width: 100%;
-    gap: 20px;
-    align-items: center;
+    gap: 110px;
+    justify-content: space-around
+  }
+
+  .checkbox-container{
+    display: flex;
+    justify-content: space-between;
   }
 
   .form-row {
@@ -990,7 +1037,7 @@ For desktop display */
 }
 
 .about-us-image {
-  background: url('assets/CG_bilder/desktop/Om-oss-Desktop-ring-500x518.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
+  background: url('assets/CG_bilder/desktop/om_oss_desktop.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
 }
 .our-production-image {
   background: url('assets/Desktop-webp/Kretskort_ReGen_Desktop_500x293.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
@@ -1295,6 +1342,10 @@ button.sustainability-button p {
 
   .social-media-text {
     font-size: 3rem;
+  }
+
+  .social-media-text h2 {
+    font-weight: bold;
   }
 
   .social-media-links-desktop {
