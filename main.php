@@ -3,21 +3,34 @@
 $imagePaths = [
     // Images 1-9 are for Collage
     'assets/CG_bilder/desktop/collage1.webp',  //Collage Image 1
-    'assets/Desktop-webp/collage2.webp',  //Collage Image 2
+    'assets/Desktop-webp/collage2.png',  //Collage Image 2
     'assets/Desktop-webp/collage3.webp',  //Collage Image 3
-    'assets/Desktop-webp/collage4.webp',  //Collage Image 4
+    'assets/Desktop-webp/collage4.png',  //Collage Image 4
     'assets/Desktop-webp/collage5.webp',  //Collage Image 5
-    'assets/Desktop-webp/collage6.webp',  //Collage Image 6
+    'assets/Desktop-webp/collage6.png',  //Collage Image 6
     'assets/Desktop-webp/collage7.webp',  //Collage Image 7
-    'assets/collage8.webp',  //Collage Image 8
+    'assets/Desktop-webp/collage8.png',  //Collage Image 8
     'assets//CG_bilder/desktop/collage9.webp',  //Collage Image 9
 
-     //Images for Categories 1-5
-     'assets/Desktop-webp/category1.webp', //Category Image 1
-     'assets/Desktop-webp/category2.webp', //Category Image 2
-     'assets/CG_bilder/desktop/category3.webp', //Category Image 3
-     'assets/CG_bilder/desktop/category4.webp', //Category Image 4
-     'assets/CG_bilder/desktop/category5.webp', //Category Image 5
+    //Images for Categories 1-5
+    'assets/Desktop-webp/category1.webp', //Category Image 1
+    'assets/Desktop-webp/category2.webp', //Category Image 2
+    'assets/CG_bilder/desktop/category3.webp', //Category Image 3
+    'assets/CG_bilder/desktop/category4.webp', //Category Image 4
+    'assets/CG_bilder/desktop/category5.webp', //Category Image 5
+];
+$categoryTexts = [
+    'Halsband',
+    'Armband',
+    'Örhängen',
+    'Ringar',
+    'Designa dina egna smycken'
+];
+$collageColors=[
+    '#F5F5F5',//collage 2
+    '#373737',//collage 4
+    '#EBAF6A',//collage6
+    '#F8B382'//collage8
 ];
 ?>
 
@@ -76,12 +89,33 @@ $imagePaths = [
         </aside>
     </section>
 
-    <section class=" categoryContainer">
+    <section class="categoryContainer">
         <?php for ($i = 9; $i < 13; $i++): ?>
-            <div class="categoryIMG" href="#" style="background-image: url('<?php echo $imagePaths[$i]; ?>') "></div>
+            <div
+                class="categoryIMG"
+                href="#"
+                style="
+                background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.50) 100%), url('<?php echo $imagePaths[$i]; ?>');
+                background-color: lightgray; 
+                background-size: cover; 
+                background-repeat: no-repeat;">
+                <span class="categoryText"><?php echo $categoryTexts[$i - 9]; ?></span>
+            </div>
         <?php endfor; ?>
-        <div class="categoryIMG fiftCategory" href="#" style="background-image: url('<?php echo $imagePaths[13]; ?>')"></div>
+        <div
+            class="categoryIMG fiftCategory"
+            href="#"
+            style="
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50%, rgba(0, 0, 0, 0.50) 100%), url('<?php echo $imagePaths[13]; ?>');
+            background-color: lightgray; 
+            background-size: cover; 
+            background-repeat: no-repeat;
+        ">
+            <span class="categoryText"><?php echo $categoryTexts[4]; ?></span>
+        </div>
     </section>
+
+
 </body>
 
 </html>

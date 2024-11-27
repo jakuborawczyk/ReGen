@@ -182,8 +182,9 @@ header {
   padding: 0px 50px;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
-.headerContainer{
+.headerContainer{ 
   width:1412px; 
   height:60px;
   display: flex;
@@ -377,22 +378,42 @@ gap: 2PX;
   align-items: center;
 gap: 29px;}
 /* images in categoryContainer */
+/* images in categoryContainer */
 .categoryIMG {
   display: flex;
   width: 260px;
   height: 290px;
-  padding: 20px 10px;
+  padding: 1.25rem 0.625rem;
   justify-content: center;
   align-items: flex-end;
   flex-shrink: 0;
   background-size: cover;
   background-repeat: no-repeat; 
   background-position: center; /* Center the image */
+  position: relative; /* Allows text positioning */
+  overflow: hidden; /* Prevents overflow of the text */
 }
+
 .categoryIMG:hover {
   cursor: pointer;
-
 }
+
+.categoryText {
+  color: var(--text-white, #FFF);
+  text-align: center;
+  font-family: "IBM Plex Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative; /* Allows smooth transform effect */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.categoryIMG:hover .categoryText {
+  transform: translateY(-20px); /* Move the text upwards by 40px */
+}
+
 
 @media (max-width: 1350px) {
   .navDesktopOnly {
@@ -854,7 +875,9 @@ flex-wrap: wrap;
   height: 153px;
   padding: 0px 8px 8px 0px;
 }
-
+.categoryText{
+  font-size: 1.5rem;
+}
   .collageContainer {
     display: none;
   }
