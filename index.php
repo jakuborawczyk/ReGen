@@ -30,20 +30,20 @@ require __DIR__ . '/main.php'; ?>
 
     <div class="checkboxes">
       <label class="checkbox-container">
-        <label class="checkbox-container">
-          <input type="checkbox">
-          <span class="checkmark"></span>
-          Jag anmäler mig till nyhetsbrevet*
-        </label>
-
         <input type="checkbox">
         <span class="checkmark"></span>
-        Jag har läst och godkänner <a href="01.php"> ReGens sekresstespolicy</a>*
+        Jag anmäler mig till nyhetsbrevet*
       </label>
+
+      <label class="checkbox-container">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+        Jag har läst och godkänner <br><a href=""> ReGens sekresstespolicy</a>*
+      </label>
+      <button type="submit" class="form-button">Skicka</button>
 
     </div>
     </div>
-    <button type="submit" class="form-button">SKICKA</button>
   </form>
   <!--form end-->
 
@@ -93,11 +93,19 @@ require __DIR__ . '/main.php'; ?>
              (min-width: 769px) 100vw" /> -->
 
     <div class="hero-inspiration-image">
+<<<<<<< Updated upstream
     <image class="mobileOnly" alt="Silvrig ring ligger på sten utomhus i solljus"
         src="assets/CG_bilder/mobil/Inspirationshero-mobilFotograferadBakgrund_Sebastian_Moreno_Ring Mobil 362x385.webp" />
       <image class="desktopOnly" alt="Silvrig ring ligger på sten utomhus i solljus" src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp" />
     
     <!-- <img
+=======
+      <image class="mobileOnly"
+        src="assets/CG_bilder/mobil/Inspirationshero-mobilFotograferadBakgrund_Sebastian_Moreno_Ring Mobil 362x385.webp" />
+      <image class="desktopOnly" src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp" />
+
+      <!-- <img
+>>>>>>> Stashed changes
       src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp"
       srcset="assets/CG_bilder/mobil/Inspirationshero-mobilFotograferadBakgrund_Sebastian_Moreno_Ring Mobil 362x385.webp 362w, 
              assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp 1416w"
