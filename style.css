@@ -259,7 +259,6 @@ nav{
 }
 /* Container for the opeening image and 9 collage images */
 .openingsContainer {
-  margin-top: 5rem;
   display: flex;
   width: 100%;
   justify-content: center;
