@@ -96,7 +96,7 @@ require __DIR__ . '/main.php'; ?>
     <div class="hero-inspiration-image">
       <image class="mobileOnly" alt="Silvrig ring ligger på sten utomhus i solljus"
         src="assets/CG_bilder/mobil/Inspirationshero-mobilFotograferadBakgrund_Sebastian_Moreno_Ring Mobil 362x385.webp" />
-      <image class="desktopOnly" alt="Silvrig ring ligger på sten utomhus i solljus" src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp" />
+      <image class="desktopOnly" alt="Silvrig ring ligger på sten utomhus i solljus" src="assets/Desktop-webp/isnpirationdesktop.webp" />
     </div>
     <h1 class="hero-inspiration-header">INSPIRATION</h1>
   </section>

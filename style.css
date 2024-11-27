@@ -269,7 +269,7 @@ nav{
 }
 /* Openings Imgage container in openingscontainer */
 .openingsImageContainer {
-  background-image: url("assets/CG_bilder/desktop/hero_laptop.webp");
+  background-image: url("assets/CG_bilder/desktop/openingsimagenew.webp");
   background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat;
@@ -867,7 +867,6 @@ input[type="email"]{
   min-width: 362px;
 }
 .openingsImageContainer {
-  background-image: url("assets/CG_bilder/desktop/hero_laptop.webp");
   display: flex;
   align-items: center;
   justify-content: center;
