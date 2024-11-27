@@ -93,23 +93,9 @@ require __DIR__ . '/main.php'; ?>
              (min-width: 769px) 100vw" /> -->
 
     <div class="hero-inspiration-image">
-<<<<<<< Updated upstream
     <image class="mobileOnly" alt="Silvrig ring ligger på sten utomhus i solljus"
         src="assets/CG_bilder/mobil/Inspirationshero-mobilFotograferadBakgrund_Sebastian_Moreno_Ring Mobil 362x385.webp" />
       <image class="desktopOnly" alt="Silvrig ring ligger på sten utomhus i solljus" src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp" />
-    
-    <!-- <img
-=======
-      <image class="mobileOnly"
-        src="assets/CG_bilder/mobil/Inspirationshero-mobilFotograferadBakgrund_Sebastian_Moreno_Ring Mobil 362x385.webp" />
-      <image class="desktopOnly" src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp" />
-
-      <!-- <img
->>>>>>> Stashed changes
-      src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp"
-      srcset="assets/CG_bilder/mobil/Inspirationshero-mobilFotograferadBakgrund_Sebastian_Moreno_Ring Mobil 362x385.webp 362w, 
-             assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp 1416w"
-      sizes="(max-width: 768px) 362px, (min-width: 769px) 1416px" /> -->
     </div>
     <h1 class="hero-inspiration-header">INSPIRATION</h1>
   </section>
