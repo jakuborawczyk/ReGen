@@ -26,7 +26,7 @@ require __DIR__ . '/main.php'; ?>
   <form action="process_email.php" method="POST">
     <label for="email">E-postadress*</label>
     <br>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" required placeholder="namn@mail.se">
 
     <div class="checkboxes">
       <label class="checkbox-container">
