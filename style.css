@@ -532,6 +532,7 @@ background-color: #EBAF6A;
 .form-text p,h2{
   display: flex;
   justify-content: center;
+  color: #373737;
 }
 
 .form-text p{
@@ -554,6 +555,33 @@ input[type="email"]{
   border: 1px solid #E9DAD6;
   padding: 10px;  
   height: 72px;   
+}
+
+.checkbox-container input[type="checkbox"] {
+  
+  width: 20px;
+  height: 20px;
+
+  appearance: none; 
+  border: 2px solid #d9d9d9; 
+  border-radius: 4px; 
+  background-color: #d9d9d9; 
+  cursor: pointer;
+
+  &:checked {
+      background-color: #d9d9d9; 
+      border-color: #d9d9d9;
+      position: relative;
+  }
+
+  &:checked::after {
+      content: '✓';
+      color: #C36443;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
 }
 
 .checkbox-container a {
@@ -618,10 +646,14 @@ input[type="email"]{
 
   .checkboxes {
     display: flex;
-    flex-direction: row;
     width: 100%;
-    gap: 20px;
-    align-items: center;
+    gap: 110px;
+    justify-content: space-around
+  }
+
+  .checkbox-container{
+    display: flex;
+    justify-content: space-between;
   }
 
   .form-row {
