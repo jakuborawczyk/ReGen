@@ -146,7 +146,7 @@ body {
 
   @media (min-width: 768px) { 
     body {
-    gap: 2.5rem;
+    gap: 7.5rem;
   }
 }
 /* Tags to use for desktop or mobile display*/
@@ -967,7 +967,7 @@ For desktop display */
 }
 
 .about-us-image {
-  background: url('assets/CG_bilder/desktop/Om-oss-Desktop-ring-500x518.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
+  background: url('assets/CG_bilder/desktop/om_oss_desktop.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
 }
 .our-production-image {
   background: url('assets/Desktop-webp/Kretskort_ReGen_Desktop_500x293.webp') lightgray -10.331px 0px / 104.133% 100% no-repeat;
