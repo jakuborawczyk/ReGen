@@ -12,12 +12,12 @@ $imagePaths = [
     'assets/collage8.webp',  //Collage Image 8
     'assets//CG_bilder/desktop/collage9.webp',  //Collage Image 9
 
-    // // Images for Categories 1-5
-    // 'assets/Desktop-webp/category1.jpg', //Category Image 1
-    // 'assets/Desktop-webp/category2.jpg', //Category Image 2
-    // 'assets/Desktop-webp/category3.jpg', //Category Image 3
-    // 'assets/Desktop-webp/category4.jpg', //Category Image 4
-    // 'assets/Desktop-webp/category5.jpg', //Category Image 5
+     //Images for Categories 1-5
+     'assets/Desktop-webp/category1.webp', //Category Image 1
+     'assets/Desktop-webp/category2.webp', //Category Image 2
+     'assets/CG_bilder/desktop/category3.webp', //Category Image 3
+     'assets/CG_bilder/desktop/category4.webp', //Category Image 4
+     'assets/CG_bilder/desktop/category5.webp', //Category Image 5
 ];
 ?>
 
@@ -80,7 +80,7 @@ $imagePaths = [
         <?php for ($i = 9; $i < 13; $i++): ?>
             <div class="categoryIMG" href="#" style="background-image: url('<?php echo $imagePaths[$i]; ?>') "></div>
         <?php endfor; ?>
-        <div class="categoryIMG fiftCategory" href="#" style="background-image: url('assets/category5.jpg')"></div>
+        <div class="categoryIMG fiftCategory" href="#" style="background-image: url('<?php echo $imagePaths[13]; ?>')"></div>
     </section>
 </body>
 

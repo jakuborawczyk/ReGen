@@ -114,12 +114,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-   outline: solid 1px red; 
+   /* outline: solid 1px red;  */
   font-family: "Ibm Plex Sans";
 }
 
 body {
-  margin: 10rem 0 0 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -163,6 +162,8 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
   background-color: #F7F7F7;
   display: flex;
   width: 100%;
@@ -211,11 +212,13 @@ justify-content: flex-end;
 
 }
 .navContainer{
+  height: auto;
   display: flex;
   align-items: center;
   cursor: pointer;
   
 }
+
 
 .navText{
 font-family: var(--font);
@@ -226,7 +229,22 @@ font-style: normal;
 font-weight: var(--font-normal-weight);
 line-height: normal;
 }
-
+.dropdownIcon{
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+@media (max-width: 1100px) { 
+  .navContainer{
+    display: none;
+  }
+.dropdownIcon{
+  display: unset;
+}
+nav{
+  width: auto;
+}
+}
 /* Container for the opeening image and 9 collage images */
 .openingsContainer {
   margin-top: 5rem;
@@ -240,8 +258,10 @@ line-height: normal;
 }
 /* Openings Imgage container in openingscontainer */
 .openingsImageContainer {
-  background-image: url("assets/Desktop-webp/öppningsbild.webp");
-  border: 1px solid #000;
+  background-image: url("assets/CG_bilder/desktop/hero_laptop.webp");
+  background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
   display: flex;
   width: 44.25rem;
   height: 28.125rem;
@@ -354,8 +374,7 @@ gap: 29px;}
   justify-content: center;
   align-items: flex-end;
   flex-shrink: 0;
-  background-color: gray;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat; 
   background-position: center; /* Center the image */
 }
@@ -363,6 +382,13 @@ gap: 29px;}
   cursor: pointer;
 
 }
+
+@media (max-width: 1350px) {
+  .navDesktopOnly {
+    display: none;
+  }
+}
+
 /* Jakubs css */
 
 /*Andrea CSS*/
@@ -704,7 +730,7 @@ button {
   min-width: 362px;
 }
 .openingsImageContainer {
-  background-image: url("assets/Mobil-webp/öppningsbbildmobile.webp");
+  background-image: url("assets/CG_bilder/desktop/hero_laptop.webp");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -721,6 +747,24 @@ padding: 10px;
 flex-direction: column;
 justify-content: flex-end;
 align-items: flex-end;
+}
+
+header{
+  height: 60px;
+  padding: 0 20px;
+}
+.logoIMG{
+  width: 58.661px;
+height: 30px;
+flex-shrink: 0;
+}
+.logoText{
+  font-size: 16px;
+  font-weight: 400;
+}
+.dropdownIcon{
+  width: 24px;
+  height: 24px;
 }
 .topTextContainer{
 display: none;
