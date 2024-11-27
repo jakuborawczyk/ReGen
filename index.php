@@ -38,7 +38,7 @@ require __DIR__ . '/main.php'; ?>
       <label class="checkbox-container">
         <input type="checkbox">
         <span class="checkmark"></span>
-        Jag har läst och godkänner <br><a href=""> ReGens sekresstespolicy</a>*
+        Jag har läst och godkänner <a href=""> ReGens sekrestesspolicy</a>*
       </label>
       <button type="submit" class="form-button">Skicka</button>
 
@@ -54,7 +54,8 @@ require __DIR__ . '/main.php'; ?>
     <div class="configurator-text">
       <h3>Klackring</h3>
       <p class="small">Våra ringar är skapade av återvunna metaller från gamla smycken och elektronik, kombinerade med laboratorieframställda ädelstenar – ett hållbart val som minimerar avfall och garanterar en etisk produktion.<br><br>
-      <strong>1099 SEK</strong></p>
+        <strong>1099 SEK</strong>
+      </p>
       <div class="configurator-choose-color">
         <p class="small">Välj färg:</p>
         <div class="configurator-options">
@@ -93,7 +94,7 @@ require __DIR__ . '/main.php'; ?>
              (min-width: 769px) 100vw" /> -->
 
     <div class="hero-inspiration-image">
-    <image class="mobileOnly" alt="Silvrig ring ligger på sten utomhus i solljus"
+      <image class="mobileOnly" alt="Silvrig ring ligger på sten utomhus i solljus"
         src="assets/CG_bilder/mobil/Inspirationshero-mobilFotograferadBakgrund_Sebastian_Moreno_Ring Mobil 362x385.webp" />
       <image class="desktopOnly" alt="Silvrig ring ligger på sten utomhus i solljus" src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp" />
     </div>

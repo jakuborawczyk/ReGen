@@ -622,7 +622,17 @@ input[type="email"]{
 
 .checkbox-container {
     display: flex;
-    align-items:flex-start;
+    flex-wrap: wrap; /* Allows items to wrap to next line */
+    align-items: center; /* Vertically centers items */
+    gap: 5px; /* Adds space between items */
+}
+
+.checkbox-container a {
+  display: block; /* Places link on a new line */
+  color: #C36443; /* Changes link color to orange */
+  text-decoration: underline; /* Adds underline to the link */
+  margin-left: 30px; /* Indents the link to align with text */
+  font-size: 14px; /* Slightly smaller font size */
 }
 
   .form-button {
