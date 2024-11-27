@@ -50,7 +50,7 @@ require __DIR__ . '/main.php'; ?>
   <!--Andrea kodar-->
   <!--CONFIGURATOR-->
   <section class="configurator-container desktopOnly">
-    <div id="configurator-jewelry" class="gold"></div>
+    <div id="configurator-jewelry" class="gold" title="Klackring med ReGens logotyp på framsida"></div>
     <div class="configurator-text">
       <h3>Klackring</h3>
       <p class="small">Våra ringar är skapade av återvunna metaller från gamla smycken och elektronik, kombinerade med laboratorieframställda ädelstenar – ett hållbart val som minimerar avfall och garanterar en etisk produktion.</p>
@@ -93,9 +93,9 @@ require __DIR__ . '/main.php'; ?>
              (min-width: 769px) 100vw" /> -->
 
     <div class="hero-inspiration-image">
-    <image class="mobileOnly"
+    <image class="mobileOnly" alt="Silvrig ring ligger på sten utomhus i solljus"
         src="assets/CG_bilder/mobil/Inspirationshero-mobilFotograferadBakgrund_Sebastian_Moreno_Ring Mobil 362x385.webp" />
-      <image class="desktopOnly" src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp" />
+      <image class="desktopOnly" alt="Silvrig ring ligger på sten utomhus i solljus" src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp" />
     
     <!-- <img
       src="assets/CG_bilder/desktop/Inspirationshero-desktop-FotograferadBakgrund_Sebastian_Moreno_Ring Desktop 1416x428.webp"
@@ -115,7 +115,7 @@ require __DIR__ . '/main.php'; ?>
     <div class="selected-sortiment selected-sortiment-margin-mobile">
       <h3>Nyheter</h3>
       <!--@TODO: Ersätt Placeholder image-->
-      <image class="selected-sortiment-image"
+      <image class="selected-sortiment-image" alt="Silvriga smycken ligger på ett bord och ett halsband som hänger över"
         src="assets/Mobil-webp/Nyheter – mobil 362x311.webp"
         srcset="assets/Mobil-webp/Nyheter – mobil 362x311.webp,
               assets/Desktop-webp/Nyheter_ReGen_Desktop_658x300.webp"
@@ -131,7 +131,7 @@ require __DIR__ . '/main.php'; ?>
     <div class="selected-sortiment desktopOnly">
       <h3>Köp looken</h3>
       <!--@TODO: Ersätt Placeholder image-->
-      <img class="selected-sortiment-image"
+      <img class="selected-sortiment-image" alt="Dekolletage med två guldiga halsband"
         src="assets/Desktop-webp/Kop-looken_ReGen_Desktop_658x300.webp"
         srcset="assets/Desktop-webp/Kop-looken_ReGen_Desktop_658x300.webp,
               assets/Desktop - webp/Nyheter_ReGen_Desktop_658x300.webp 658w"
@@ -142,7 +142,7 @@ require __DIR__ . '/main.php'; ?>
     <div class=" selected-sortiment selected-sortiment-margin-mobile">
       <h3>Våra favoriter</h3>
       <!--@TODO: Ersätt Placeholder image-->
-      <img class="selected-sortiment-image"
+      <img class="selected-sortiment-image" alt="Guldiga ringar och örhängen ligger på ett fat i keramik"
         src="assets/Mobil-webp/Våra favoriter – mobil 362x311.webp"
         srcset="assets/Mobil-webp/Våra favoriter – mobil 362x311.webp,
               assets/Desktop-webp/Favoriter_ReGen_Desktop_658x300.webp"
@@ -158,7 +158,7 @@ require __DIR__ . '/main.php'; ?>
     <div class="selected-sortiment desktopOnly">
       <h3>Kommande kollektioner</h3>
       <!--@TODO: Ersätt Placeholder image-->
-      <img class="selected-sortiment-image"
+      <img class="selected-sortiment-image" alt="Två händer smider örhänge med stenar"
         src="assets/Desktop-webp/Kommande_ReGen_Desktop_658x300.webp"
         srcset="assets/Mobil-webp/Nyheter – mobil 362x311.webp 362w,
               assets/Desktop-webp/Kommande_ReGen_Desktop_658x300.webp"
